@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+    <div id="app"></div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    {{ parent() }}
+
+    <script>
+        window.homeRoute = '{{ path('app.home') }}';
+    </script>
+
+    {{ vite_entry_script_tags('app',{dependency: 'vue'}) }}
+
+{% endblock %}
