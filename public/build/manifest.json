@@ -1,0 +1,14 @@
+{
+  "assets/ts/app.css": {
+    "file": "app-f92a4b11.css",
+    "src": "assets/ts/app.css"
+  },
+  "assets/ts/app.ts": {
+    "css": [
+      "app-f92a4b11.css"
+    ],
+    "file": "app-cdd3f433.js",
+    "isEntry": true,
+    "src": "assets/ts/app.ts"
+  }
+}

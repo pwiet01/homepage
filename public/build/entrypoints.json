@@ -1,0 +1,17 @@
+{
+  "isProd": true,
+  "viteServer": false,
+  "entryPoints": {
+    "app": {
+      "js": [
+        "/build/app-cdd3f433.js"
+      ],
+      "css": [
+        "/build/app-f92a4b11.css"
+      ],
+      "preload": [],
+      "legacy": false
+    }
+  },
+  "legacy": false
+}
