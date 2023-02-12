@@ -1,0 +1,16 @@
+# Database for local development
+
+services:
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - "db:/var/lib/postgresql/data"
+    environment:
+      - POSTGRES_USER=app
+    env_file:
+      - .env.local
+
+volumes:
+  db:

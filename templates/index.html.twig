@@ -11,11 +11,6 @@
 {% block javascripts %}
 
     {{ parent() }}
-
-    <script>
-        window.homeRoute = '{{ path('app.home') }}';
-    </script>
-
     {{ vite_entry_script_tags('app',{dependency: 'vue'}) }}
 
 {% endblock %}

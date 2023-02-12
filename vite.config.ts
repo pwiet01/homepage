@@ -11,15 +11,14 @@ export default defineConfig({
     root: '.',
     base: '/build/',
     build: {
-      manifest: true,
-      emptyOutDir: true,
-      assetsDir: '',
-      outDir: './public/build',
-      rollupOptions: {
-        input: {
-          main: './assets/main.ts',
-          app: './assets/ts/app.ts',
+        manifest: true,
+        emptyOutDir: true,
+        assetsDir: '',
+        outDir: './public/build',
+        rollupOptions: {
+            input: {
+                app: './assets/ts/app.ts'
+            },
         },
-      },
     },
 });

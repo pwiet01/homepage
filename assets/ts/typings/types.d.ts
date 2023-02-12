@@ -1,6 +1,6 @@
 declare global {
-  interface Window {
-    homeRoute: string;
-  }
+    interface Window {
+
+    }
 }
-export {};
+export { };
