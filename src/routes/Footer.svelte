@@ -1,8 +1,9 @@
 <script>
   import SvelteLogo from './SvelteLogo.svelte';
+  import { footerHidden } from '$lib/stores';
 </script>
 
-<footer class="navbar px-0 justify-between">
+<footer class="navbar px-0 justify-between {$footerHidden ? 'hide' : ''}">
   <a
     href="https://kit.svelte.dev/"
     target="_blank"
@@ -30,3 +31,13 @@
     </a>
   </div>
 </footer>
+
+<style>
+  .navbar {
+    transition: all 100ms ease-out;
+  }
+
+  .hide {
+    transform: translateY(4rem);
+  }
+</style>

@@ -1,8 +1,9 @@
 <script>
   import LogoFull from './LogoFull.svelte';
+  import { headerHidden } from '$lib/stores';
 </script>
 
-<header class="navbar px-0 -mx-[0.875rem]">
+<header class="navbar px-0 -mx-[0.875rem] min-h-0 h-[4rem] {$headerHidden ? 'hide' : ''}">
   <div class="flex-none dropdown">
     <button class="btn btn-square btn-ghost">
       <svg
@@ -29,3 +30,13 @@
     </a>
   </div>
 </header>
+
+<style>
+  .navbar {
+    transition: all 100ms ease-out;
+  }
+
+  .hide {
+    transform: translateY(-4rem);
+  }
+</style>
