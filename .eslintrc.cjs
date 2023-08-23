@@ -27,4 +27,14 @@ module.exports = {
       },
     },
   ],
+  rules: {
+    'svelte/block-lang': [
+      'error',
+      {
+        enforceScriptPresent: false,
+        enforceStylePresent: false,
+        script: ['ts'],
+      },
+    ],
+  },
 };

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import '../app.css';
   import '@fontsource/ubuntu-mono';
   import Header from './Header.svelte';

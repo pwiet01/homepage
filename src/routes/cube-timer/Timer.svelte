@@ -1,7 +1,10 @@
-<script lang="ts">
-  import { formatMs } from '$lib/timerUtils';
-  import { createEventDispatcher, onDestroy } from 'svelte';
-  import { headerHidden, footerHidden } from '$lib/stores';
+<script lang="ts" xmlns:svelte="http://www.w3.org/1999/html">
+  import { formatMs } from './_ts/timerUtils';
+  import { onDestroy } from 'svelte';
+  import CenterFull from '$lib/CenterFull.svelte';
+
+  export let lastTime = 0;
+  export let solving = false;
 
   enum State {
     PAUSED,
@@ -19,10 +22,6 @@
     [State.STOP]: 'text-red-500',
   };
 
-  const dispatch = createEventDispatcher<{
-    stopped: number;
-  }>();
-
   let time = 0;
 
   let timeoutId: number | undefined = undefined;
@@ -33,11 +32,11 @@
   $: {
     switch (state) {
       case State.READY:
-        toggleHideElements(true);
+        solving = true;
         break;
       case State.STOP:
-        toggleHideElements(false);
-        dispatch('stopped', time);
+        solving = false;
+        lastTime = time;
         break;
     }
   }
@@ -49,16 +48,18 @@
     clearInterval(intervalId);
   });
 
-  function onKeyDown(event: KeyboardEvent) {
+  function onKeyDown(event: KeyboardEvent | TouchEvent) {
+    const key = event instanceof KeyboardEvent ? event.key : 'touch';
+
     if (state === State.RUNNING) {
       clearInterval(intervalId);
       intervalId = undefined;
       state = State.STOP;
-      stopKey = event.key;
+      stopKey = key;
       return;
     }
 
-    if (state === State.PAUSED && isSpaceKey(event.key)) {
+    if (state === State.PAUSED && isSpaceKeyOrTouch(key)) {
       state = State.WAITING;
       timeoutId = setTimeout(() => {
         time = 0;
@@ -68,13 +69,25 @@
     }
   }
 
-  function onKeyUp(event: KeyboardEvent) {
-    if (state === State.STOP && event.key === stopKey) {
+  function onKeyUp(event: KeyboardEvent | TouchEvent) {
+    let key = '';
+
+    if (event instanceof KeyboardEvent) {
+      key = event.key;
+    } else {
+      key = 'touch';
+
+      if (event.touches.length > 0) {
+        return;
+      }
+    }
+
+    if (state === State.STOP && key === stopKey) {
       state = State.PAUSED;
       return;
     }
 
-    if (isSpaceKey(event.key)) {
+    if (isSpaceKeyOrTouch(key)) {
       if (state === State.READY) {
         state = State.RUNNING;
         intervalId = setInterval(() => {
@@ -91,18 +104,17 @@
     }
   }
 
-  function isSpaceKey(key: string): boolean {
-    return key === ' ' || key === 'Spacebar';
-  }
-
-  function toggleHideElements(hide: boolean) {
-    $headerHidden = hide;
-    $footerHidden = hide;
+  function isSpaceKeyOrTouch(key: string): boolean {
+    return key === ' ' || key === 'Spacebar' || key === 'touch';
   }
 </script>
 
-<div class="text-[5rem] sm:text-[6rem] md:text-[7rem] {stateColor}">
-  {formatMs(time)}
+<div class="w-full h-full" on:touchstart={onKeyDown} on:touchend={onKeyUp}>
+  <CenterFull>
+    <div class="text-[5rem] sm:text-[6rem] md:text-[7rem] {stateColor}">
+      {formatMs(time)}
+    </div>
+  </CenterFull>
 </div>
 
 <svelte:window on:keydown|preventDefault={onKeyDown} on:keyup|preventDefault={onKeyUp} />

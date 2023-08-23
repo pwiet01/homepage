@@ -1,16 +1,16 @@
-<script>
+<script lang="ts">
   import SvelteLogo from './SvelteLogo.svelte';
-  import { footerHidden } from '$lib/stores';
+  import { footerHidden } from '$lib/_ts/stores';
 </script>
 
-<footer class="navbar px-0 justify-between {$footerHidden ? 'hide' : ''}">
+<footer class="navbar px-0 min-h-[4rem] h-[4rem] justify-between {$footerHidden ? 'hide' : ''}">
   <a
     href="https://kit.svelte.dev/"
     target="_blank"
-    class="pl-0 flex-1 hidden sm:flex flex-row items-center"
+    class="-ml-[0.375rem] flex flex-row items-center"
   >
-    Made with
-    <SvelteLogo class="w-auto h-7 ml-1" />
+    <span class="hidden sm:block sm:mr-1">Made with</span>
+    <SvelteLogo class="w-fit h-7" />
   </a>
 
   <div class="flex-1 sm:flex-none flex flex-row items-center justify-end">
@@ -34,7 +34,7 @@
 
 <style>
   .navbar {
-    transition: all 100ms ease-out;
+    transition: all 100ms linear;
   }
 
   .hide {
