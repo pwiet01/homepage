@@ -1,7 +1,7 @@
 <script lang="ts" xmlns:svelte="http://www.w3.org/1999/html">
   import { formatMs } from './_ts/timerUtils';
   import { onDestroy } from 'svelte';
-  import CenterFull from '$lib/CenterFull.svelte';
+  import CenterFull from '$lib/layout/CenterFull.svelte';
 
   export let lastTime = 0;
   export let solving = false;

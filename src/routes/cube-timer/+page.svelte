@@ -1,10 +1,9 @@
 <script lang="ts">
   import Timer from './Timer.svelte';
   import TimeTableMobile from './TimeTableMobile.svelte';
-  import { footerHidden, headerHidden } from '$lib/_ts/stores';
+  import { footerHidden, headerHidden } from '$lib/ts/stores';
 
   let lastTime = 0;
-  $: console.log(lastTime);
 
   let solving = false;
   $: toggleHideElements(solving);
@@ -21,6 +20,6 @@
   </div>
 
   <div class="w-full {solving ? 'hidden' : ''}">
-    <TimeTableMobile />
+    <TimeTableMobile {lastTime} />
   </div>
 </div>

@@ -1,6 +1,6 @@
 <script lang="ts">
   import SvelteLogo from './SvelteLogo.svelte';
-  import { footerHidden } from '$lib/_ts/stores';
+  import { footerHidden } from '$lib/ts/stores';
 </script>
 
 <footer class="navbar px-0 min-h-[4rem] h-[4rem] justify-between {$footerHidden ? 'hide' : ''}">

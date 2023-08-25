@@ -1,5 +1,5 @@
 <script lang="ts">
-  import PageWithPadding from '$lib/PageWithPadding.svelte';
+  import PageWithPadding from '$lib/layout/PageWithPadding.svelte';
 
   interface Project {
     href: string;

@@ -1,4 +1,10 @@
-export function formatMs(ms: number): string {
+import type { CubeTimerSolve } from './types';
+
+export function formatMs(ms: number | undefined): string {
+  if (ms == undefined) {
+    return '-';
+  }
+
   const msRemainder = Math.floor((ms % 1000) / 10);
 
   const s = Math.floor(ms / 1000);
@@ -29,4 +35,24 @@ export function formatMs(ms: number): string {
   }
 
   return timeString;
+}
+
+export function calculateAverage(solves: CubeTimerSolve[]): number | undefined {
+  if (solves.length < 3) {
+    return undefined;
+  }
+
+  let times = solves.map((solve) => solve.single);
+
+  const min = times.indexOf(Math.min(...times));
+  const max = times.indexOf(Math.max(...times));
+
+  if (min === max) {
+    return times[0];
+  }
+
+  times = times.filter((_, index) => index !== min && index !== max);
+  const sum = times.reduce((a, b) => a + b, 0);
+
+  return sum / times.length;
 }

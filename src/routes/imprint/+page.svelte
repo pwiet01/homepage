@@ -1,6 +1,6 @@
 <script lang="ts">
-  import PageWithPadding from '$lib/PageWithPadding.svelte';
-  import CenterFull from '$lib/CenterFull.svelte';
+  import PageWithPadding from '$lib/layout/PageWithPadding.svelte';
+  import CenterFull from '$lib/layout/CenterFull.svelte';
 </script>
 
 <PageWithPadding>

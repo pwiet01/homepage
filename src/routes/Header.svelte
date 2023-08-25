@@ -1,6 +1,8 @@
 <script lang="ts">
   import LogoFull from './LogoFull.svelte';
-  import { headerHidden } from '$lib/_ts/stores';
+  import { headerHidden } from '$lib/ts/stores';
+
+  export let debug = false;
 </script>
 
 <header class="navbar px-0 min-h-[4rem] h-[4rem] {$headerHidden ? 'hide' : ''}">
@@ -25,12 +27,16 @@
         <li><a href="/cube-timer" class="text-xl">Cube Timer</a></li>
       </ul>
     </div>
-    <div class="flex-1">
-      <a href="/" class="btn btn-ghost opacity-100">
-        <LogoFull class="w-auto h-6" />
-      </a>
-    </div>
+    <a href="/" class="flex-1 btn btn-ghost opacity-100">
+      <LogoFull class="w-auto h-6" />
+    </a>
   </div>
+
+  {#if debug}
+    <div class="flex-1 flex justify-end">
+      <a href="/debug">Debug</a>
+    </div>
+  {/if}
 </header>
 
 <style>
