@@ -1,14 +1,39 @@
 <script lang="ts">
-  import type { CubeTimerRecords } from './_ts/types';
+  import type { CubeTimerRecords, CubeTimerSolve } from './_ts/types';
   import { formatMs } from './_ts/timerUtils';
 
-  let records: CubeTimerRecords = {};
+  export let lastSolve: CubeTimerSolve | undefined;
+  export let records: CubeTimerRecords;
+
+  $: records = {
+    single: getRecord(lastSolve, 'single'),
+    ao5: getRecord(lastSolve, 'ao5'),
+    ao12: getRecord(lastSolve, 'ao12'),
+  };
 
   $: parsedRecords = {
     single: formatMs(records.single),
     ao5: formatMs(records.ao5),
     ao12: formatMs(records.ao12),
   };
+
+  function getRecord(
+    lastSolve: CubeTimerSolve | undefined,
+    type: 'single' | 'ao5' | 'ao12'
+  ): number | undefined {
+    if (lastSolve == undefined || lastSolve[type] == undefined) {
+      return undefined;
+    }
+
+    const lastTime = lastSolve[type] as number;
+    const recordTime = records[type];
+
+    if (recordTime == undefined || recordTime > lastTime) {
+      return lastTime;
+    }
+
+    return recordTime;
+  }
 </script>
 
 <table class="w-full table-fixed">

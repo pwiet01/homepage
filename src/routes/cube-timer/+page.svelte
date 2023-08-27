@@ -23,7 +23,9 @@
     <Timer bind:lastTime bind:solving />
   </div>
 
-  <div class="w-full {solving ? 'hidden' : ''}">
-    <TimeTableMobile {lastTime} />
+  <div class="flex justify-center">
+    <div class="w-full max-w-2xl {solving ? 'hidden' : ''}">
+      <TimeTableMobile {lastTime} />
+    </div>
   </div>
 </PageNoScroll>

@@ -37,7 +37,21 @@ export function formatMs(ms: number | undefined): string {
   return timeString;
 }
 
-export function calculateAverage(solves: CubeTimerSolve[]): number | undefined {
+export function getAverage(
+  currentSolve: CubeTimerSolve,
+  pastSolves: CubeTimerSolve[],
+  numOfSolves: number
+): number | undefined {
+  if (pastSolves.length < numOfSolves - 1) {
+    return undefined;
+  }
+
+  const filteredSolves = [currentSolve, ...pastSolves.slice(0, numOfSolves - 1)];
+
+  return calculateAverage(filteredSolves);
+}
+
+function calculateAverage(solves: CubeTimerSolve[]): number | undefined {
   if (solves.length < 3) {
     return undefined;
   }

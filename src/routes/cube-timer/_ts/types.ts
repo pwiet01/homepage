@@ -10,3 +10,8 @@ export interface CubeTimerRecords {
   ao5?: number;
   ao12?: number;
 }
+
+export interface CubeTimerStorage {
+  records: CubeTimerRecords;
+  solves: CubeTimerSolve[];
+}

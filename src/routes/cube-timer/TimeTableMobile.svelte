@@ -1,37 +1,43 @@
 <script lang="ts">
-  import type { CubeTimerSolve } from './_ts/types';
+  import type { CubeTimerRecords, CubeTimerSolve } from './_ts/types';
   import TimeTableEntry from './TimeTableEntry.svelte';
   import TimeRecords from './TimeRecords.svelte';
-  import { calculateAverage } from './_ts/timerUtils';
+  import { getAverage } from './_ts/timerUtils';
+  import { onMount, tick } from 'svelte';
+  import { getCubeTimerStorage, saveCubeTimerStorage } from './_ts/timerStorage';
 
   export let lastTime: number;
 
   let solves: CubeTimerSolve[] = [];
+  let records: CubeTimerRecords = {};
 
   $: if (lastTime > 0) {
     addSolve();
   }
 
-  function addSolve() {
+  $: onMount(() => {
+    const storageSolves = getCubeTimerStorage();
+    solves = storageSolves.solves;
+    records = storageSolves.records;
+  });
+
+  async function addSolve() {
     const newSolve: CubeTimerSolve = {
       timeStamp: Date.now(),
       single: lastTime,
     };
 
-    newSolve.ao5 = getAverage(newSolve, 5);
-    newSolve.ao12 = getAverage(newSolve, 12);
+    newSolve.ao5 = getAverage(newSolve, solves, 5);
+    newSolve.ao12 = getAverage(newSolve, solves, 12);
 
     solves = [newSolve, ...solves];
-  }
 
-  function getAverage(solve: CubeTimerSolve, numOfSolves: number): number | undefined {
-    if (solves.length < numOfSolves - 1) {
-      return undefined;
-    }
+    await tick();
 
-    const filteredSolves = [solve, ...solves.slice(0, numOfSolves - 1)];
-
-    return calculateAverage(filteredSolves);
+    saveCubeTimerStorage({
+      records: records,
+      solves: solves,
+    });
   }
 </script>
 
@@ -51,6 +57,6 @@
   </div>
 
   <div class="bg-gray-600 rounded mt-2 border border-green-500">
-    <TimeRecords />
+    <TimeRecords lastSolve={solves[0]} bind:records />
   </div>
 </div>

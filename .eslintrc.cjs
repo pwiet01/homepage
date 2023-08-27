@@ -36,5 +36,6 @@ module.exports = {
         script: ['ts'],
       },
     ],
+    '@typescript-eslint/ban-ts-comment': 'off',
   },
 };
