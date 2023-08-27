@@ -1,5 +1,5 @@
-<script>
-  import UnderConstruction from '$lib/UnderConstruction.svelte';
+<script lang="ts">
+  import UnderConstruction from '$lib/components/UnderConstruction.svelte';
 </script>
 
 <UnderConstruction />

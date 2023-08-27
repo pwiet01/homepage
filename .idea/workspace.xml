@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/LogoFull.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/SvelteLogo.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/kicktipp/+page.svelte" afterDir="false" />
+    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Add full screen logic for mobile">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/cube-timer/_ts/timerStorage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/UnderConstruction.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fontawesome/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/fontawesome/css/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/fontawesome/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/fontawesome/css/all.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/TimeRecords.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/TimeRecords.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/TimeTableMobile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/TimeTableMobile.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/_ts/timerUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_ts/timerUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/_ts/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_ts/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +24,20 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="DebugPage" />
+        <option value="DebugBreakpoint" />
+        <option value="+layout.server" />
+        <option value="DebugHeader" />
+        <option value="+page" />
+        <option value="Records" />
+        <option value="PageNoScroll" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -40,6 +45,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "pwiet01"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="58e16240-5c2d-430c-8a61-e65b20eb536a" />
+        <option name="url" value="git@github.com:pwiet01/homepage.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,25 +74,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feature/daisy-ui",
-    "last_opened_file_path": "/Users/pwiet/Documents/Projects/homepage",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.tools",
-    "ts.external.directory.path": "/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/cube-timer&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pwiet/Documents/Projects/homepage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -82,10 +102,11 @@
       <recent name="$PROJECT_DIR$/src/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/static/images" />
-      <recent name="$PROJECT_DIR$/static/fontawesome" />
-      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$/src/lib/ts" />
+      <recent name="$PROJECT_DIR$/src/routes/debug" />
+      <recent name="$PROJECT_DIR$/src/lib/components" />
+      <recent name="$PROJECT_DIR$/src/lib/layout" />
+      <recent name="$PROJECT_DIR$/src/routes/cube-timer/ts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.lint">
@@ -129,7 +150,43 @@
       <workItem from="1692303012022" duration="8306000" />
       <workItem from="1692398136026" duration="11409000" />
       <workItem from="1692537205056" duration="17524000" />
+      <workItem from="1692816636518" duration="16431000" />
+      <workItem from="1692900049866" duration="20025000" />
+      <workItem from="1693135395439" duration="13453000" />
     </task>
+    <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
+      <option name="closed" value="true" />
+      <created>1692660169522</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692660169522</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cube Timer Page add TimeTable Layout">
+      <option name="closed" value="true" />
+      <created>1692832949205</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692832949205</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cube Timer Page add TimeTable Logic and Debug Page">
+      <option name="closed" value="true" />
+      <created>1692922184510</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692922184510</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add full screen logic for mobile">
+      <option name="closed" value="true" />
+      <created>1693140932195</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693140932195</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,5 +194,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Cube Timer Page add Timer" />
+    <MESSAGE value="Cube Timer Page add TimeTable Layout" />
+    <MESSAGE value="Cube Timer Page add TimeTable Logic and Debug Page" />
+    <MESSAGE value="Add full screen logic for mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add full screen logic for mobile" />
   </component>
 </project>

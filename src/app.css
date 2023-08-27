@@ -6,33 +6,37 @@
   :root {
     color-scheme: only dark;
     font-family: 'Ubuntu Mono', monospace;
+
+    --vh: 1vh;
+    --header-height: 4rem;
+    --footer-height: 4rem;
   }
 
   body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     padding: 0 1.5rem;
+    height: calc(var(--vh, 1vh) * 100);
   }
 
   h1 {
-    @apply text-5xl;
-  }
-
-  h2 {
     @apply text-4xl;
   }
 
-  h3 {
+  h2 {
     @apply text-3xl;
   }
 
-  h4 {
+  h3 {
     @apply text-2xl;
   }
 
-  h5 {
+  h4 {
     @apply text-xl;
+  }
+
+  h5 {
+    @apply text-lg;
   }
 
   a {

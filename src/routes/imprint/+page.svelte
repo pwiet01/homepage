@@ -1,5 +1,10 @@
-<div class="w-full h-full flex flex-col justify-center">
-  <div class="flex justify-center">
+<script lang="ts">
+  import PageWithPadding from '$lib/layout/PageWithPadding.svelte';
+  import CenterFull from '$lib/layout/CenterFull.svelte';
+</script>
+
+<PageWithPadding>
+  <CenterFull>
     <div class="flex-1 card bg-base-200 shadow-xl max-w-3xl">
       <div class="card-body">
         <h1 class="mb-6">Impressum</h1>
@@ -18,5 +23,5 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </CenterFull>
+</PageWithPadding>

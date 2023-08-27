@@ -27,4 +27,15 @@ module.exports = {
       },
     },
   ],
+  rules: {
+    'svelte/block-lang': [
+      'error',
+      {
+        enforceScriptPresent: false,
+        enforceStylePresent: false,
+        script: ['ts'],
+      },
+    ],
+    '@typescript-eslint/ban-ts-comment': 'off',
+  },
 };
