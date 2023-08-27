@@ -5,7 +5,7 @@
   export let debug = false;
 </script>
 
-<header class="navbar px-0 min-h-[4rem] h-[4rem] {$headerHidden ? 'hide' : ''}">
+<header class="navbar px-0 {$headerHidden ? 'hide' : ''}">
   <div class="flex items-center -ml-[0.875rem]">
     <div class="flex-none dropdown">
       <button class="btn btn-square btn-ghost">
@@ -42,9 +42,10 @@
 <style>
   .navbar {
     transition: all 100ms linear;
+    height: var(--header-height, 4rem);
   }
 
   .hide {
-    transform: translateY(-4rem);
+    transform: translateY(calc(var(--header-height) * -1));
   }
 </style>

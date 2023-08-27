@@ -3,7 +3,7 @@
   import { footerHidden } from '$lib/ts/stores';
 </script>
 
-<footer class="navbar px-0 min-h-[4rem] h-[4rem] justify-between {$footerHidden ? 'hide' : ''}">
+<footer class="navbar px-0 justify-between {$footerHidden ? 'hide' : ''}">
   <a
     href="https://kit.svelte.dev/"
     target="_blank"
@@ -35,9 +35,10 @@
 <style>
   .navbar {
     transition: all 100ms linear;
+    height: var(--footer-height, 4rem);
   }
 
   .hide {
-    transform: translateY(4rem);
+    transform: translateY(var(--footer-height));
   }
 </style>

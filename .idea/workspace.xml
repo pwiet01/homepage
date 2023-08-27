@@ -4,32 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Cube Timer Page add TimeTable Layout">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/UnderConstruction.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/cube-timer/TimeRecords.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/debug/+page.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/debug/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/debug/DebugBreakpoint.svelte" afterDir="false" />
+    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Cube Timer Page add TimeTable Logic and Debug Page">
+      <change afterPath="$PROJECT_DIR$/src/lib/layout/PageNoScroll.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/CenterFull.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/layout/CenterFull.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/PageWithPadding.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/layout/PageWithPadding.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/UnderConstruction.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/_ts/stores.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ts/stores.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ts/stores.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ts/stores.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Footer.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Header.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/TimeTableEntry.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/TimeTableEntry.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/TimeTableMobile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/TimeTableMobile.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/Timer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/Timer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/_ts/timerUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_ts/timerUtils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/_ts/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_ts/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/kicktipp/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/kicktipp/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +32,7 @@
         <option value="+page" />
         <option value="TypeScript File" />
         <option value="Records" />
+        <option value="PageNoScroll" />
       </list>
     </option>
   </component>
@@ -59,6 +43,20 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "pwiet01"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="58e16240-5c2d-430c-8a61-e65b20eb536a" />
+        <option name="url" value="git@github.com:pwiet01/homepage.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -151,7 +149,8 @@
       <workItem from="1692398136026" duration="11409000" />
       <workItem from="1692537205056" duration="17524000" />
       <workItem from="1692816636518" duration="16431000" />
-      <workItem from="1692900049866" duration="19695000" />
+      <workItem from="1692900049866" duration="20025000" />
+      <workItem from="1693135395439" duration="5364000" />
     </task>
     <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
       <option name="closed" value="true" />
@@ -169,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692832949205</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cube Timer Page add TimeTable Logic and Debug Page">
+      <option name="closed" value="true" />
+      <created>1692922184510</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692922184510</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +186,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Cube Timer Page add Timer" />
     <MESSAGE value="Cube Timer Page add TimeTable Layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cube Timer Page add TimeTable Layout" />
+    <MESSAGE value="Cube Timer Page add TimeTable Logic and Debug Page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cube Timer Page add TimeTable Logic and Debug Page" />
   </component>
 </project>

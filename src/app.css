@@ -6,17 +6,17 @@
   :root {
     color-scheme: only dark;
     font-family: 'Ubuntu Mono', monospace;
+
+    --vh: 1vh;
+    --header-height: 4rem;
+    --footer-height: 4rem;
   }
 
   body {
     display: flex;
     flex-direction: column;
     padding: 0 1.5rem;
-  }
-
-  html,
-  body {
-    height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
   }
 
   h1 {
