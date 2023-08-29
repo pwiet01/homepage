@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Add home layout">
-      <change afterPath="$PROJECT_DIR$/src/lib/components/HandPointerListItem.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/TechStack.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/basecom_blume.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/basecom_blume_white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/spryker.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/typescript.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
+    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Add home content">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/UnderConstruction.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/UnderConstruction.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/layout/PageWithPadding.svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/AboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/AboutMe.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Projects.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Projects.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/patrice01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/patrice01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/debug/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/debug/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,26 +77,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feature/home",
-    "last_opened_file_path": "/Users/pwiet/Documents/Projects/homepage/static/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettier.import.notification.dismissed": "true",
-    "settings.editor.selected.configurable": "configurable.group.tools",
-    "ts.external.directory.path": "/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/home&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pwiet/Documents/Projects/homepage/static/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images" />
@@ -168,7 +161,8 @@
       <workItem from="1693135395439" duration="13767000" />
       <workItem from="1693172490213" duration="14462000" />
       <workItem from="1693246310045" duration="5146000" />
-      <workItem from="1693251475722" duration="16830000" />
+      <workItem from="1693251475722" duration="17327000" />
+      <workItem from="1693270263566" duration="1191000" />
     </task>
     <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
       <option name="closed" value="true" />
@@ -218,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693187197701</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add home content">
+      <option name="closed" value="true" />
+      <created>1693268825550</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693268825550</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +235,7 @@
     <MESSAGE value="Add full screen logic for mobile" />
     <MESSAGE value="Add local storage" />
     <MESSAGE value="Add home layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add home layout" />
+    <MESSAGE value="Add home content" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add home content" />
   </component>
 </project>
