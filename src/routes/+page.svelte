@@ -2,21 +2,20 @@
   import PageWithPadding from '$lib/layout/PageWithPadding.svelte';
   import Projects from './Projects.svelte';
   import AboutMe from './AboutMe.svelte';
-  import { loremIpsum } from 'lorem-ipsum';
+  import HandPointerListItem from '$lib/components/HandPointerListItem.svelte';
+  import TechStack from './TechStack.svelte';
 
-  const sectionClass = 'flex flex-row justify-center items-center';
+  const sectionClass = 'flex flex-row justify-center items-center py-6 md:py-12';
   const sectionInnerClass = 'flex-1 max-w-[80rem] items-center';
-  const sectionHeaderClass = 'opacity-70 text-center mb-4';
+  const sectionHeaderClass = 'opacity-70 text-center mb-6';
 
-  const dividerClass = 'flex flex-row justify-center p-0 my-6 md:my-12';
+  const dividerClass = 'flex flex-row justify-center p-0';
   const dividerInnerClass = 'divider flex-1 max-w-[80rem] justify-center';
 </script>
 
 <PageWithPadding>
-  <section class="{sectionClass} card bg-base-200">
-    <div
-      class="{sectionInnerClass} card-body px-0 flex flex-col-reverse md:flex-row md:justify-between"
-    >
+  <section class="{sectionClass} px-[1.5rem] py-10 w-screen -ml-[1.5rem] bg-base-200">
+    <div class="{sectionInnerClass} flex flex-col-reverse md:flex-row md:justify-between">
       <div class="flex-1">
         <h1 class="text-primary mb-2">Hey!</h1>
         <p class="text-lg">
@@ -26,11 +25,21 @@
         <p class="text-lg mt-1">
           Auf dieser Website möchte ich mich und einige meiner Projekte vorstellen.
         </p>
-        <ul class="mt-5 list-disc list-inside text-lg">
-          <li><a href="#projects" class="text-link">Meine Projekte</a></li>
-          <li><a href="#about-me" class="text-link">Über mich</a></li>
-          <li><a href="#tech-stack" class="text-link">Technologien</a></li>
-          <li><a href="#contact" class="text-link">Kontaktformular</a></li>
+        <ul class="fa-ul ml-0 mt-5 text-lg">
+          <HandPointerListItem
+            ><a href="#projects" class="text-link text-teal-500 before:bg-teal-500"
+              >Meine Projekte</a
+            ></HandPointerListItem
+          >
+          <HandPointerListItem
+            ><a href="#about-me" class="text-link text-teal-500 before:bg-teal-500">Über mich</a
+            ></HandPointerListItem
+          >
+          <HandPointerListItem
+            ><a href="#tech-stack" class="text-link text-teal-500 before:bg-teal-500"
+              >Technologien</a
+            ></HandPointerListItem
+          >
         </ul>
       </div>
 
@@ -40,13 +49,9 @@
     </div>
   </section>
 
-  <section id="projects" class="{sectionClass} px-0 mt-8 sm:mt-14">
+  <section id="projects" class="{sectionClass} px-0 mt-[1.5rem]">
     <div class="{sectionInnerClass} px-0">
-      <h3 class={sectionHeaderClass}>Projekte auf GitHub</h3>
-      <p>{loremIpsum({ count: 5 })}</p>
-
-      <h3 class="{sectionHeaderClass} mt-10">Auf dieser Website</h3>
-      <Projects />
+      <Projects {sectionHeaderClass} />
     </div>
   </section>
 
@@ -68,18 +73,7 @@
   <section id="tech-stack" class={sectionClass}>
     <div class={sectionInnerClass}>
       <h3 class={sectionHeaderClass}>Technologien</h3>
-      <p>{loremIpsum({ count: 5 })}</p>
-    </div>
-  </section>
-
-  <div class={dividerClass}>
-    <div class={dividerInnerClass} />
-  </div>
-
-  <section id="contact" class={sectionClass}>
-    <div class={sectionInnerClass}>
-      <h3 class={sectionHeaderClass}>Kontakt</h3>
-      <p>{loremIpsum({ count: 5 })}</p>
+      <TechStack />
     </div>
   </section>
 </PageWithPadding>

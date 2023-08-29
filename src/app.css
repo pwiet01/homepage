@@ -6,6 +6,7 @@
   :root {
     color-scheme: only dark;
     font-family: 'Ubuntu Mono', monospace;
+    scroll-behavior: smooth;
 
     --vh: 1vh;
     --header-height: 4rem;
@@ -49,20 +50,20 @@
 
   a:hover,
   a:focus,
-  a.text-link:hover,
-  a.text-link:focus {
+  .text-link:hover,
+  .text-link:focus {
     opacity: 100%;
   }
 
-  a.text-link {
+  .text-link {
     display: inline;
     padding: 0;
-    opacity: 80%;
+    opacity: 100%;
     position: relative;
     color: hsl(var(--p));
   }
 
-  a.text-link::before {
+  .text-link::before {
     content: '';
     position: absolute;
     display: block;
