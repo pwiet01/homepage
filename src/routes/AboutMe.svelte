@@ -35,15 +35,16 @@
       </a>
     </p>
     <p class="block mb-3 text-sm leading-none opacity-50">2019-2022</p>
-    <div class="mb-4 opacity-90 text-sm">
+    <div class="mb-4 opacity-90 text-sm max-w-lg">
       <ul class="list-disc">
         <li class="mb-2">
-          Praktische Abschlussarbeit in der AG Software Engineering:<br />
-          Entwicklung eines Prüfungskalenders auf Basis von React und NodeJS
+          Praktische Abschlussarbeit in der AG Software Engineering: Entwicklung eines
+          Prüfungskalenders auf Basis von React und NodeJS
         </li>
         <li>
-          Studentische Hilfskraft in den Veranstaltungen "Software-Entwicklung"<br />
-          und "Technische Informatik"
+          Studentische Hilfskraft in den Veranstaltungen
+          <span class="italic">Software-Entwicklung</span> und
+          <span class="italic">Technische Informatik</span>
         </li>
       </ul>
     </div>
@@ -66,7 +67,7 @@
       </a>
     </p>
     <p class="block mb-3 text-sm leading-none opacity-50">seit Januar 2023</p>
-    <div class="mb-4 opacity-90 text-sm">
+    <div class="mb-4 opacity-90 text-sm max-w-lg">
       <ul class="list-disc">
         <li class="mb-2">Entwicklung von Softwareprojekten im Bereich E-Commerce</li>
         <li class="mb-2">Schwerpunkt: Spryker, Symfony (PHP)</li>

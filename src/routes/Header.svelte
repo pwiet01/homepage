@@ -5,7 +5,7 @@
   export let debug = false;
 </script>
 
-<header class="navbar px-0 {$headerHidden ? 'hide' : ''}">
+<header class="navbar px-0 relative {$headerHidden ? 'hide' : ''}">
   <div class="flex items-center -ml-[0.875rem]">
     <div class="flex-none dropdown">
       <button class="btn btn-square btn-ghost">
