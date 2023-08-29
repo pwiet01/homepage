@@ -37,5 +37,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/ban-ts-comment': 'off',
+    'svelte/no-at-html-tags': 'off',
   },
 };
