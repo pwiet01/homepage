@@ -14,7 +14,7 @@
       <div class={outerClass}>
         <div class={innerClass}>
           <i class="fa-brands fa-symfony {iconClass}" />
-          <h4 class="card-title">Symfony</h4>
+          <h2 class="card-title text-xl">Symfony</h2>
         </div>
       </div>
     </a>
@@ -25,7 +25,7 @@
           <div class="w-2/5 flex flex-row">
             <img src="./images/spryker.svg" alt="" class="block h-[2.1rem] ml-6" />
           </div>
-          <h4 class="card-title">Spryker</h4>
+          <h2 class="card-title text-xl">Spryker</h2>
         </div>
       </div>
     </a>
@@ -34,7 +34,7 @@
       <div class={outerClass}>
         <div class={innerClass}>
           <i class="fa-brands fa-php text-blue-500 {iconClass}" />
-          <h4 class="card-title">PHP</h4>
+          <h2 class="card-title text-xl">PHP</h2>
         </div>
       </div>
     </a>
@@ -45,7 +45,7 @@
       <div class={outerClass}>
         <div class={innerClass}>
           <i class="fa-brands fa-vuejs text-green-500 {iconClass}" />
-          <h4 class="card-title">Vue.js</h4>
+          <h2 class="card-title text-xl">Vue.js</h2>
         </div>
       </div>
     </a>
@@ -56,7 +56,7 @@
           <div class="w-2/5 flex flex-row">
             <SvelteLogo class="block h-[1.9rem] ml-5" />
           </div>
-          <h4 class="card-title">Svelte</h4>
+          <h2 class="card-title text-xl">Svelte</h2>
         </div>
       </div>
     </a>
@@ -67,7 +67,7 @@
           <div class="w-2/5 flex flex-row">
             <img src="./images/typescript.svg" alt="" class="block h-[1.75rem] ml-5" />
           </div>
-          <h4 class="card-title">TypeScript</h4>
+          <h2 class="card-title text-xl">TypeScript</h2>
         </div>
       </div>
     </a>
@@ -78,7 +78,7 @@
       <div class={outerClass}>
         <div class={innerClass}>
           <i class="fa-brands fa-git-alt text-orange-500 {iconClass}" />
-          <h4 class="card-title">Git</h4>
+          <h2 class="card-title text-xl">Git</h2>
         </div>
       </div>
     </a>
@@ -87,7 +87,7 @@
       <div class={outerClass}>
         <div class={innerClass}>
           <i class="fa-brands fa-docker text-blue-500 {iconClass}" />
-          <h4 class="card-title">Docker</h4>
+          <h2 class="card-title text-xl">Docker</h2>
         </div>
       </div>
     </a>
