@@ -6,7 +6,7 @@
 
   const sectionClass = 'flex flex-row justify-center items-center py-6 md:py-12';
   const sectionInnerClass = 'flex-1 max-w-[80rem] items-center';
-  const sectionHeaderClass = 'opacity-70 text-center mb-6';
+  const sectionHeaderClass = 'opacity-70 text-center mb-6 text-2xl';
 
   const dividerClass = 'flex flex-row justify-center p-0';
   const dividerInnerClass = 'divider flex-1 max-w-[80rem] justify-center';
@@ -17,7 +17,7 @@
 >
   <div class="{sectionInnerClass} flex flex-col-reverse md:flex-row md:justify-between">
     <div class="flex-1">
-      <h1 class="text-primary mb-2">Hey!</h1>
+      <h1 class="text-primary mb-2 text-4xl">Hey!</h1>
       <p class="text-lg">
         Ich bin Patrice, Full Stack Web Developer aus Osnabrück und seit Januar 2023 bei
         <a href="https://www.basecom.de/" target="_blank" class="text-link">basecom</a> beschäftigt.
@@ -59,7 +59,7 @@
 
 <section id="about-me" class={sectionClass}>
   <div class={sectionInnerClass}>
-    <h3 class={sectionHeaderClass}>Über mich</h3>
+    <h1 class={sectionHeaderClass}>Über mich</h1>
     <AboutMe />
   </div>
 </section>
@@ -70,7 +70,7 @@
 
 <section id="tech-stack" class={sectionClass}>
   <div class={sectionInnerClass}>
-    <h3 class={sectionHeaderClass}>Technologien</h3>
+    <h1 class={sectionHeaderClass}>Technologien</h1>
     <TechStack />
   </div>
 </section>

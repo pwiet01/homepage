@@ -38,7 +38,7 @@
   ];
 </script>
 
-<h3 class={sectionHeaderClass}>Projekte auf GitHub</h3>
+<h1 class={sectionHeaderClass}>Projekte auf GitHub</h1>
 <div class="w-full flex flex-col md:flex-row md:flex-wrap justify-center">
   {#each githubProjects as project (project.href)}
     <a href={project.href} target="_blank" class="p-0 opacity-70 hover:-translate-y-1">
@@ -54,7 +54,7 @@
   {/each}
 </div>
 
-<h3 class="{sectionHeaderClass} mt-10">Auf dieser Website</h3>
+<h1 class="{sectionHeaderClass} mt-10">Auf dieser Website</h1>
 <div class="w-full flex flex-col md:flex-row md:flex-wrap justify-center">
   {#each websiteProjects as project (project.href)}
     <a href={project.href} class="p-0 opacity-70 hover:-translate-y-1">
