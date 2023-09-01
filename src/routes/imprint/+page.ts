@@ -3,5 +3,8 @@ export function load() {
     meta: {
       title: 'Impressum',
     },
+    body: {
+      fixedHeight: true,
+    },
   };
 }

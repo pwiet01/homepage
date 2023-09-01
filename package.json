@@ -34,6 +34,7 @@
   "type": "module",
   "dependencies": {
     "@fontsource/ubuntu-mono": "^5.0.8",
-    "lorem-ipsum": "^2.0.8"
+    "lorem-ipsum": "^2.0.8",
+    "nodemailer": "^6.9.4"
   }
 }

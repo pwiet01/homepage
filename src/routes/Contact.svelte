@@ -1,69 +1,82 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
-  import type { ActionData } from './$types';
+  import type { ContactFormResponse } from './_ts/types';
 
-  export let form: ActionData;
-  $: formData = {
-    email: '',
-    name: '',
-    message: '',
-    ...form?.messageForm?.data,
-  };
+  export let form: ContactFormResponse | undefined;
+  $: if (form) {
+    updateFormData(form);
+  }
 
-  $: isValid =
-    /^\S+@\S+$/.test(formData.email) &&
-    formData.name.trim().length > 0 &&
-    formData.message.trim().length > 0;
+  let email = '';
+  let fullName = '';
+  let message = '';
+
+  $: isValid = /^\S+@\S+$/.test(email) && fullName.trim().length > 0 && message.trim().length > 0;
 
   let isLoading = false;
   let successModal: HTMLDialogElement;
+
+  const messageMaxLength = 1000;
+
+  function updateFormData(form: ContactFormResponse) {
+    email = form.data?.email ?? '';
+    fullName = form.data?.fullName ?? '';
+    message = form.data?.message ?? '';
+  }
 </script>
 
 <div class="w-full flex flex-row justify-center">
   <form
     method="post"
-    action="?/message"
+    action="?/contact"
     class="max-w-2xl"
     use:enhance={() => {
       isLoading = true;
 
-      return ({ result, update }) => {
+      return async ({ result, update }) => {
         isLoading = false;
 
         if (result.type === 'success') {
           successModal.showModal();
         }
 
-        update();
+        await update();
       };
     }}
   >
     <input
-      bind:value={formData.email}
+      bind:value={email}
+      name="email"
       type="email"
       required
       disabled={isLoading}
       placeholder="E-Mail-Adresse"
       class="input input-bordered w-full text-base mb-2"
+      maxlength="50"
     />
 
     <input
-      bind:value={formData.name}
+      bind:value={fullName}
+      name="fullName"
       type="text"
       required
       disabled={isLoading}
       placeholder="Name"
       class="input input-bordered w-full text-base mb-5"
+      maxlength="50"
     />
 
     <textarea
-      bind:value={formData.message}
+      bind:value={message}
+      name="message"
       placeholder="Nachricht"
       required
       disabled={isLoading}
       rows="6"
-      class="textarea textarea-bordered w-full text-base mb-5"
+      class="textarea textarea-bordered w-full text-base"
+      maxlength={messageMaxLength}
     />
+    <p class="text-xs opacity-70 mb-5">{messageMaxLength - message.length}/{messageMaxLength}</p>
 
     <button type="submit" disabled={isLoading || !isValid} class="btn btn-primary w-full">
       <span class="loading loading-spinner{isLoading ? '' : ' hidden'}" />
@@ -83,6 +96,6 @@
     </div>
   </form>
   <form method="dialog" class="modal-backdrop">
-    <button>close</button>
+    <button class="cursor-default" />
   </form>
 </dialog>

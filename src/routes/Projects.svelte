@@ -1,10 +1,5 @@
 <script lang="ts">
-  interface Project {
-    href: string;
-    name: string;
-    description1: string;
-    description2?: string;
-  }
+  import type { Project } from './_ts/types';
 
   export let sectionHeaderClass = '';
 

@@ -3,6 +3,7 @@
   import AboutMe from './AboutMe.svelte';
   import HandPointerListItem from '$lib/components/HandPointerListItem.svelte';
   import TechStack from './TechStack.svelte';
+  import Contact from './Contact.svelte';
 
   const sectionClass = 'flex flex-row justify-center items-center py-6 md:py-12';
   const sectionInnerClass = 'flex-1 max-w-[80rem] items-center';
@@ -10,10 +11,12 @@
 
   const dividerClass = 'flex flex-row justify-center p-0';
   const dividerInnerClass = 'divider flex-1 max-w-[80rem] justify-center';
+
+  export let form;
 </script>
 
 <section
-  class="{sectionClass} px-[1.5rem] pt-24 md:pt-28 pb-6 md:pb-12 -mt-[--header-height] w-screen -ml-[1.5rem] bg-base-200"
+  class="{sectionClass} px-[--body-padding] pt-24 md:pt-28 pb-6 md:pb-12 -mt-[--header-height] body-full-width-section bg-base-200"
 >
   <div class="{sectionInnerClass} flex flex-col-reverse md:flex-row md:justify-between">
     <div class="flex-1">
@@ -36,6 +39,10 @@
         >
         <HandPointerListItem
           ><a href="#tech-stack" class="text-link text-teal-500 before:bg-teal-500">Technologien</a
+          ></HandPointerListItem
+        >
+        <HandPointerListItem
+          ><a href="#contact" class="text-link text-teal-500 before:bg-teal-500">Kontaktformular</a
           ></HandPointerListItem
         >
       </ul>
@@ -72,5 +79,16 @@
   <div class={sectionInnerClass}>
     <h1 class={sectionHeaderClass}>Technologien</h1>
     <TechStack />
+  </div>
+</section>
+
+<div class={dividerClass}>
+  <div class={dividerInnerClass} />
+</div>
+
+<section id="contact" class={sectionClass}>
+  <div class={sectionInnerClass}>
+    <h1 class={sectionHeaderClass}>Kontakt</h1>
+    <Contact form={form?.contactForm} />
   </div>
 </section>

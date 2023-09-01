@@ -35,7 +35,7 @@
 <style>
   .navbar {
     transition: all 100ms linear;
-    height: var(--footer-height, 4rem);
+    height: var(--footer-height);
   }
 
   .hide {

@@ -5,5 +5,9 @@ export function load() {
       description: 'Speedcube Timer mit Synchronisation',
       keywords: 'rubiks cube, speedcube, timer',
     },
+    body: {
+      fixedHeight: true,
+      overflowHidden: true,
+    },
   };
 }

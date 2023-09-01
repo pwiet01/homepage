@@ -11,13 +11,23 @@
     --vh: 1vh;
     --header-height: 4rem;
     --footer-height: 4rem;
+    --body-padding: 1.5rem;
   }
 
   body {
     display: flex;
     flex-direction: column;
-    padding: 0 1.5rem;
-    height: calc(var(--vh, 1vh) * 100);
+    padding: 0 var(--body-padding);
+    min-height: calc(var(--vh) * 100);
+  }
+
+  body.fixed-height {
+    height: calc(var(--vh) * 100);
+  }
+
+  .body-full-width-section {
+    width: calc(100% + (2 * var(--body-padding)));
+    margin-left: calc(var(--body-padding) * -1);
   }
 
   a {

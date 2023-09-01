@@ -2,7 +2,6 @@
   import Timer from './Timer.svelte';
   import TimeTableMobile from './TimeTableMobile.svelte';
   import { footerHidden, headerHidden } from '$lib/ts/stores';
-  import PageNoScroll from '$lib/layout/PageNoScroll.svelte';
   import { onDestroy } from 'svelte';
 
   let lastTime = 0;
@@ -18,7 +17,7 @@
   }
 </script>
 
-<PageNoScroll class="select-none">
+<div class="w-full h-full flex flex-col select-none">
   <div class="flex-1">
     <Timer bind:lastTime bind:solving />
   </div>
@@ -28,4 +27,4 @@
       <TimeTableMobile {lastTime} />
     </div>
   </div>
-</PageNoScroll>
+</div>
