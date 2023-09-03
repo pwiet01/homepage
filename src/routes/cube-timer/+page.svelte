@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Timer from './Timer.svelte';
-  import TimeTableMobile from './TimeTableMobile.svelte';
+  import Timer from './_components/Timer.svelte';
+  import TimeTableMobile from './_components/TimeTableMobile.svelte';
   import { footerHidden, headerHidden } from '$lib/ts/stores';
   import { onDestroy } from 'svelte';
 

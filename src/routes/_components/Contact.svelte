@@ -1,6 +1,6 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
-  import type { ContactFormResponse } from './_ts/types';
+  import type { ContactFormResponse } from '../_ts/types';
   import { onMount } from 'svelte';
   import type { ActionResult } from '@sveltejs/kit';
 
@@ -31,7 +31,7 @@
     message = form?.data?.message ?? '';
   }
 
-  function getContactPhoneResponse(actionResult: ActionResult) {
+  function getContactFormResponse(actionResult: ActionResult) {
     return actionResult.type === 'success' || actionResult.type === 'failure'
       ? <ContactFormResponse | undefined>actionResult?.data?.contactForm
       : undefined;
@@ -42,7 +42,7 @@
   <form
     method="post"
     action="?/contact"
-    class="max-w-2xl"
+    class="w-full md:max-w-2xl"
     use:enhance={() => {
       isLoading = true;
 
@@ -54,7 +54,7 @@
         }
 
         await update();
-        updateFormData(getContactPhoneResponse(result));
+        updateFormData(getContactFormResponse(result));
       };
     }}
   >

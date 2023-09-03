@@ -1,9 +1,10 @@
 <script lang="ts">
-  import Projects from './Projects.svelte';
-  import AboutMe from './AboutMe.svelte';
+  import Projects from './_components/Projects.svelte';
+  import AboutMe from './_components/AboutMe.svelte';
   import HandPointerListItem from '$lib/components/HandPointerListItem.svelte';
-  import TechStack from './TechStack.svelte';
-  import Contact from './Contact.svelte';
+  import TechStack from './_components/TechStack.svelte';
+  import Contact from './_components/Contact.svelte';
+  import { base } from '$app/paths';
 
   const sectionClass = 'flex flex-row justify-center items-center py-6 md:py-12';
   const sectionInnerClass = 'flex-1 max-w-[80rem] items-center';
@@ -49,7 +50,7 @@
     </div>
 
     <div class="mb-6 md:mb-0 md:ml-10 flex flex-col justify-center items-center">
-      <img src="./images/patrice01.jpg" alt="Profilbild" class="max-h-64 rounded-full" />
+      <img src="{base}/images/patrice01.jpg" alt="Profilbild" class="max-h-64 rounded-full" />
     </div>
   </div>
 </section>

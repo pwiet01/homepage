@@ -1,8 +1,8 @@
 import nodemailer from 'nodemailer';
-import { MAILER_HOST, MAILER_USER, MAILER_PASSWORD, NODE_ENV } from '$env/static/private';
-import { globalConfig } from '$lib/config/config';
+import { MAILER_HOST, MAILER_USER, MAILER_PASSWORD } from '$env/static/private';
+import { globalConfig } from '$lib/config/globalConfig';
 import { promises as fs } from 'fs';
-import * as path from 'path';
+import { serverConfig } from '$lib/server/config/serverConfig';
 
 export interface CustomMail {
   subject: string;
@@ -12,7 +12,7 @@ export interface CustomMail {
 }
 
 export async function sendMail(mail: CustomMail) {
-  const basePath = `${path.resolve()}/static/mail`;
+  const basePath = serverConfig.mail.templatePath;
   const baseTemplate = await fs.readFile(`${basePath}/base.html`, 'utf-8');
   const template = await fs.readFile(`${basePath}/${mail.templateName}.html`, 'utf-8');
 
@@ -32,12 +32,10 @@ export async function sendMail(mail: CustomMail) {
 }
 
 function getMailTransport() {
-  const isDevEnv = NODE_ENV === 'development';
-
   const transport = {
-    host: isDevEnv ? 'localhost' : MAILER_HOST,
-    port: isDevEnv ? 1025 : 465,
-    secure: !isDevEnv,
+    host: serverConfig.isDevEnv ? 'localhost' : MAILER_HOST,
+    port: serverConfig.isDevEnv ? 1025 : 465,
+    secure: !serverConfig.isDevEnv,
     auth: {
       user: MAILER_USER,
       pass: MAILER_PASSWORD,
@@ -45,7 +43,7 @@ function getMailTransport() {
   };
 
   const defaults = {
-    from: globalConfig.mail.sender,
+    from: serverConfig.mail.sender,
   };
 
   return nodemailer.createTransport(transport, defaults);

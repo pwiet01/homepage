@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { CubeTimerRecords, CubeTimerSolve } from './_ts/types';
+  import type { CubeTimerRecords, CubeTimerSolve } from '../_ts/types';
   import TimeTableEntry from './TimeTableEntry.svelte';
   import TimeRecords from './TimeRecords.svelte';
-  import { getAverage } from './_ts/timerUtils';
+  import { getAverage } from '../_ts/timerUtils';
   import { onMount, tick } from 'svelte';
-  import { getCubeTimerStorage, saveCubeTimerStorage } from './_ts/timerStorage';
+  import { getCubeTimerStorage, saveCubeTimerStorage } from '../_ts/timerStorage';
 
   export let lastTime: number;
 

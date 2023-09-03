@@ -1,8 +1,8 @@
 <script lang="ts">
   import '../app.css';
   import '@fontsource/ubuntu-mono';
-  import Header from './Header.svelte';
-  import Footer from './Footer.svelte';
+  import Header from './_components/Header.svelte';
+  import Footer from './_components/Footer.svelte';
   import { onMount } from 'svelte';
   import { page } from '$app/stores';
 

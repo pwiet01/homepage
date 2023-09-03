@@ -1,5 +1,5 @@
 <script lang="ts" xmlns:svelte="http://www.w3.org/1999/html">
-  import { formatMs } from './_ts/timerUtils';
+  import { formatMs } from '../_ts/timerUtils';
   import { onDestroy } from 'svelte';
   import CenterFull from '$lib/layout/CenterFull.svelte';
 

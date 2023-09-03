@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SvelteLogo from './SvelteLogo.svelte';
+  import SvelteLogo from '$lib/components/SvelteLogo.svelte';
   import { footerHidden } from '$lib/ts/stores';
 </script>
 

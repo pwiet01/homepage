@@ -1,6 +1,6 @@
 <script lang="ts">
   import CenterFull from '$lib/layout/CenterFull.svelte';
-  import { globalConfig } from '$lib/config/config';
+  import { globalConfig } from '$lib/config/globalConfig';
 </script>
 
 <CenterFull>

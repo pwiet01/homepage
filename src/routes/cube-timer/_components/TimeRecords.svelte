@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { CubeTimerRecords, CubeTimerSolve } from './_ts/types';
-  import { formatMs } from './_ts/timerUtils';
+  import type { CubeTimerRecords, CubeTimerSolve } from '../_ts/types';
+  import { formatMs } from '../_ts/timerUtils';
 
   export let lastSolve: CubeTimerSolve | undefined;
   export let records: CubeTimerRecords;

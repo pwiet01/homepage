@@ -1,8 +1,8 @@
 import { error } from '@sveltejs/kit';
-import { NODE_ENV } from '$env/static/private';
+import { serverConfig } from '$lib/server/config/serverConfig';
 
 export function load() {
-  if (NODE_ENV !== 'development') {
+  if (!serverConfig.isDevEnv) {
     throw error(404, 'Not Found');
   }
 }

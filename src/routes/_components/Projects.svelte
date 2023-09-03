@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Project } from './_ts/types';
+  import type { Project } from '../_ts/types';
 
   export let sectionHeaderClass = '';
 

@@ -38,6 +38,7 @@
   "type": "module",
   "dependencies": {
     "@fontsource/ubuntu-mono": "^5.0.8",
+    "liquidjs": "^10.9.2",
     "nodemailer": "^6.9.4"
   }
 }
