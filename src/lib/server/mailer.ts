@@ -1,8 +1,8 @@
 import nodemailer from 'nodemailer';
 import { MAILER_HOST, MAILER_USER, MAILER_PASSWORD } from '$env/static/private';
 import { globalConfig } from '$lib/config/globalConfig';
-import { promises as fs } from 'fs';
 import { serverConfig } from '$lib/server/config/serverConfig';
+import * as fs from "fs";
 
 export interface CustomMail {
   subject: string;
@@ -12,9 +12,11 @@ export interface CustomMail {
 }
 
 export async function sendMail(mail: CustomMail) {
+  fs.readdirSync(process.cwd()).forEach(console.log);
+
   const basePath = serverConfig.mail.templatePath;
-  const baseTemplate = await fs.readFile(`${basePath}/base.html`, 'utf-8');
-  const template = await fs.readFile(`${basePath}/${mail.templateName}.html`, 'utf-8');
+  const baseTemplate = fs.readFileSync(`${basePath}/base.html`, 'utf-8');
+  const template = fs.readFileSync(`${basePath}/${mail.templateName}.html`, 'utf-8');
 
   let html = baseTemplate.replace('%title%', mail.subject).replace('%content%', template);
 

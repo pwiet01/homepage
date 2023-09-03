@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Adjustments">
       <change beforePath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/server/mailer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/mailer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +163,7 @@
       <workItem from="1693423186930" duration="15794000" />
       <workItem from="1693514941345" duration="17305000" />
       <workItem from="1693676283842" duration="23226000" />
-      <workItem from="1693761251586" duration="10858000" />
+      <workItem from="1693761251586" duration="11431000" />
     </task>
     <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
       <option name="closed" value="true" />
@@ -252,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693772137228</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adjustments">
+      <option name="closed" value="true" />
+      <created>1693772333165</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1693772333165</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
