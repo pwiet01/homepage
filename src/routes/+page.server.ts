@@ -2,7 +2,8 @@ import type { Actions } from './$types';
 import { fail } from '@sveltejs/kit';
 import type { ContactFormData } from './_ts/types';
 import { parseFormDataString } from '$lib/ts/formUtils';
-import { sendMail } from '$lib/server/mailer';
+import { sendMail } from '$lib/server/mail/mailer';
+import Contact from "$lib/server/mail/templates/Contact.svelte";
 
 export const actions: Actions = {
   contact({ request }) {
@@ -29,9 +30,9 @@ async function processContactAction(request: Request) {
   }
 
   await sendMail({
-    templateName: 'contact',
     subject: 'Homepage Kontakt',
-    data: {
+    template: Contact,
+    props: {
       email: parsedData.email,
       name: parsedData.fullName,
       message: parsedData.message.split('\n').join('<br/>'),

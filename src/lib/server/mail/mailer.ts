@@ -2,29 +2,25 @@ import nodemailer from 'nodemailer';
 import { MAILER_HOST, MAILER_USER, MAILER_PASSWORD } from '$env/static/private';
 import { globalConfig } from '$lib/config/globalConfig';
 import { serverConfig } from '$lib/server/config/serverConfig';
-import * as fs from "fs";
+import type { ComponentProps, ComponentType, SvelteComponent } from 'svelte';
+import Base from "$lib/server/mail/templates/Base.svelte";
 
-export interface CustomMail {
-  subject: string;
-  templateName: string;
+export interface CustomMail<Component extends SvelteComponent> {
   to?: string;
-  data?: { [key: string]: string };
+  subject: string;
+  template: ComponentType<Component>;
+  props?: ComponentProps<Component>;
 }
 
-export async function sendMail(mail: CustomMail) {
-  fs.readdirSync(process.cwd()).forEach(console.log);
+export async function sendMail<Component extends SvelteComponent>(mail: CustomMail<Component>) {
+  // @ts-ignore
+  const content = mail.template.render(mail.props).html;
 
-  const basePath = serverConfig.mail.templatePath;
-  const baseTemplate = fs.readFileSync(`${basePath}/base.html`, 'utf-8');
-  const template = fs.readFileSync(`${basePath}/${mail.templateName}.html`, 'utf-8');
-
-  let html = baseTemplate.replace('%title%', mail.subject).replace('%content%', template);
-
-  if (mail.data) {
-    for (const [key, value] of Object.entries(mail.data)) {
-      html = html.replace(`%${key}%`, value);
-    }
-  }
+  // @ts-ignore
+  const { html } = Base.render({
+    title: mail.subject,
+    content: content,
+  });
 
   return getMailTransport().sendMail({
     subject: mail.subject,

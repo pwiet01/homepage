@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Adjustments">
+      <change afterPath="$PROJECT_DIR$/src/lib/server/mail/templates/Base.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/server/mail/templates/Contact.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/server/mailer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/mailer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/server/mailer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/mail/mailer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/mail/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/mail/contact.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +37,11 @@
         <option value="HandPointerLink" />
         <option value="TechStack" />
         <option value="SprykerLogo" />
-        <option value="Contact" />
         <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="Test" />
+        <option value="Base" />
+        <option value="Contact" />
       </list>
     </option>
   </component>
@@ -103,11 +111,11 @@
       <recent name="$PROJECT_DIR$/src/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/server/mail" />
       <recent name="$PROJECT_DIR$/src/routes/cube-timer/_components" />
       <recent name="$PROJECT_DIR$/src/routes/debug/_components" />
       <recent name="$PROJECT_DIR$/src/routes/_components" />
       <recent name="$PROJECT_DIR$/src/lib/components" />
-      <recent name="$PROJECT_DIR$/src/lib/server" />
     </key>
   </component>
   <component name="RunManager" selected="npm.lint">
@@ -163,7 +171,7 @@
       <workItem from="1693423186930" duration="15794000" />
       <workItem from="1693514941345" duration="17305000" />
       <workItem from="1693676283842" duration="23226000" />
-      <workItem from="1693761251586" duration="11431000" />
+      <workItem from="1693761251586" duration="17490000" />
     </task>
     <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
       <option name="closed" value="true" />
@@ -261,7 +269,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693772333165</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adjustments">
+      <option name="closed" value="true" />
+      <created>1693772901507</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693772901507</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adjustments">
+      <option name="closed" value="true" />
+      <created>1693773142961</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1693773142961</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
