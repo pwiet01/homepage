@@ -1,11 +1,18 @@
 <script lang="ts">
   import { enhance } from '$app/forms';
   import type { ContactFormResponse } from './_ts/types';
+  import { onMount } from 'svelte';
+  import type { ActionResult } from '@sveltejs/kit';
 
   export let form: ContactFormResponse | undefined;
-  $: if (form) {
+
+  onMount(() => {
+    if (form?.success) {
+      successModal.showModal();
+    }
+
     updateFormData(form);
-  }
+  });
 
   let email = '';
   let fullName = '';
@@ -18,10 +25,16 @@
 
   const messageMaxLength = 1000;
 
-  function updateFormData(form: ContactFormResponse) {
-    email = form.data?.email ?? '';
-    fullName = form.data?.fullName ?? '';
-    message = form.data?.message ?? '';
+  function updateFormData(form: ContactFormResponse | undefined) {
+    email = form?.data?.email ?? '';
+    fullName = form?.data?.fullName ?? '';
+    message = form?.data?.message ?? '';
+  }
+
+  function getContactPhoneResponse(actionResult: ActionResult) {
+    return actionResult.type === 'success' || actionResult.type === 'failure'
+      ? <ContactFormResponse | undefined>actionResult?.data?.contactForm
+      : undefined;
   }
 </script>
 
@@ -41,6 +54,7 @@
         }
 
         await update();
+        updateFormData(getContactPhoneResponse(result));
       };
     }}
   >
@@ -50,7 +64,7 @@
       type="email"
       required
       disabled={isLoading}
-      placeholder="E-Mail-Adresse"
+      placeholder="Deine E-Mail-Adresse"
       class="input input-bordered w-full text-base mb-2"
       maxlength="50"
     />
@@ -87,7 +101,7 @@
 
 <dialog class="modal backdrop-blur" bind:this={successModal}>
   <form method="dialog" class="modal-box">
-    <h1 class="text-xl">Nachricht gesendet!</h1>
+    <h1 class="text-2xl">Nachricht gesendet!</h1>
     <p class="py-4">
       Ich habe die Nachricht erhalten und melde mich so schnell wie möglich zurück!
     </p>

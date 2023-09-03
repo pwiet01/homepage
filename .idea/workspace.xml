@@ -4,28 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Improve SEO">
-      <change afterPath="$PROJECT_DIR$/src/lib/ts/formUtils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/_ts/types.ts" afterDir="false" />
+    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Add contact form dummy">
+      <change afterPath="$PROJECT_DIR$/src/lib/config/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/server/mailer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mail/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mail/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.cjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/layout/PageNoScroll.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ts/stores.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ts/stores.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+error.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+error.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Contact.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Contact.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Projects.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Projects.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/imprint/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/imprint/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/kicktipp/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/kicktipp/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/_ts/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_ts/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/Timer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/Timer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +48,7 @@
         <option value="SprykerLogo" />
         <option value="Contact" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -91,26 +88,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/contact-form&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pwiet/Documents/Projects/homepage/static/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "feature/contact-form",
+    "last_opened_file_path": "/Users/pwiet/Documents/Projects/homepage/static/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettier.import.notification.dismissed": "true",
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "ts.external.directory.path": "/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images" />
@@ -120,11 +118,11 @@
       <recent name="$PROJECT_DIR$/src/app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/server" />
+      <recent name="$PROJECT_DIR$/static/mail" />
+      <recent name="$PROJECT_DIR$/src/lib/server/mail" />
+      <recent name="$PROJECT_DIR$/src/lib/server/mail-templates" />
       <recent name="$PROJECT_DIR$/static/images" />
-      <recent name="$PROJECT_DIR$/src/lib/ts" />
-      <recent name="$PROJECT_DIR$/src/routes/debug" />
-      <recent name="$PROJECT_DIR$/src/lib/components" />
-      <recent name="$PROJECT_DIR$/src/lib/layout" />
     </key>
   </component>
   <component name="RunManager" selected="npm.lint">
@@ -178,7 +176,8 @@
       <workItem from="1693251475722" duration="17327000" />
       <workItem from="1693270263566" duration="1191000" />
       <workItem from="1693423186930" duration="15794000" />
-      <workItem from="1693514941345" duration="17192000" />
+      <workItem from="1693514941345" duration="17305000" />
+      <workItem from="1693676283842" duration="22724000" />
     </task>
     <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
       <option name="closed" value="true" />
@@ -244,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693438826784</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add contact form dummy">
+      <option name="closed" value="true" />
+      <created>1693532262991</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693532262991</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +268,7 @@
     <MESSAGE value="Add home layout" />
     <MESSAGE value="Add home content" />
     <MESSAGE value="Improve SEO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve SEO" />
+    <MESSAGE value="Add contact form dummy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add contact form dummy" />
   </component>
 </project>

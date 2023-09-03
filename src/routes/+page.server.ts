@@ -2,6 +2,7 @@ import type { Actions } from './$types';
 import { fail } from '@sveltejs/kit';
 import type { ContactFormData } from './_ts/types';
 import { parseFormDataString } from '$lib/ts/formUtils';
+import { sendMail } from '$lib/server/mailer';
 
 export const actions: Actions = {
   contact({ request }) {
@@ -20,12 +21,26 @@ async function processContactAction(request: Request) {
       message: parseFormDataString(data, 'message', 1000),
     };
   } catch (e) {
-    return fail(400);
+    return fail(400, {
+      contactForm: {
+        success: false,
+      },
+    });
   }
+
+  await sendMail({
+    templateName: 'contact',
+    subject: 'Homepage Kontakt',
+    data: {
+      email: parsedData.email,
+      name: parsedData.fullName,
+      message: parsedData.message.split('\n').join('<br/>'),
+    },
+  });
 
   return {
     contactForm: {
-      data: parsedData,
+      success: true,
     },
   };
 }

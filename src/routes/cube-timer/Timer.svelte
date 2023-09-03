@@ -24,8 +24,8 @@
 
   let time = 0;
 
-  let timeoutId: number | undefined = undefined;
-  let intervalId: number | undefined = undefined;
+  let timeoutId: any = undefined;
+  let intervalId: any = undefined;
 
   let state = State.PAUSED;
   $: stateColor = stateColors[state];

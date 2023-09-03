@@ -6,6 +6,7 @@ export interface Project {
 }
 
 export interface ContactFormResponse {
+  success: boolean;
   data?: Partial<ContactFormData>;
 }
 

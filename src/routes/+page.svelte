@@ -16,7 +16,7 @@
 </script>
 
 <section
-  class="{sectionClass} px-[--body-padding] pt-24 md:pt-28 pb-6 md:pb-12 -mt-[--header-height] body-full-width-section bg-base-200"
+  class="{sectionClass} body-full-width-section pt-24 md:pt-28 pb-6 md:pb-12 -mt-[--header-height] bg-base-200"
 >
   <div class="{sectionInnerClass} flex flex-col-reverse md:flex-row md:justify-between">
     <div class="flex-1">
