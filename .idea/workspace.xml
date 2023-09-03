@@ -4,33 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Add contact form logic">
-      <change afterPath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/config/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/config/globalConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/server/mailer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/mailer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/AboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/AboutMe.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Contact.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/Contact.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/Footer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/LogoFull.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/LogoFull.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Projects.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/Projects.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/SvelteLogo.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/SvelteLogo.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/TechStack.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/TechStack.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/TimeRecords.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_components/TimeRecords.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/TimeTableEntry.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_components/TimeTableEntry.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/TimeTableMobile.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_components/TimeTableMobile.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/Timer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_components/Timer.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/debug/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/debug/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/debug/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/debug/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/debug/DebugBreakpoint.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/debug/_components/DebugBreakpoint.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/imprint/+page.svelte" afterDir="false" />
+    <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="Adjustments">
+      <change beforePath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +162,7 @@
       <workItem from="1693423186930" duration="15794000" />
       <workItem from="1693514941345" duration="17305000" />
       <workItem from="1693676283842" duration="23226000" />
-      <workItem from="1693761251586" duration="10529000" />
+      <workItem from="1693761251586" duration="10858000" />
     </task>
     <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
       <option name="closed" value="true" />
@@ -269,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693699838573</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Adjustments">
+      <option name="closed" value="true" />
+      <created>1693772137228</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693772137228</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +271,7 @@
     <MESSAGE value="Improve SEO" />
     <MESSAGE value="Add contact form dummy" />
     <MESSAGE value="Add contact form logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add contact form logic" />
+    <MESSAGE value="Adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjustments" />
   </component>
 </project>

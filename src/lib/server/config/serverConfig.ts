@@ -5,7 +5,7 @@ const isDevEnv = NODE_ENV === 'development';
 export const serverConfig = {
   isDevEnv: isDevEnv,
   mail: {
-    templatePath: `${process.cwd()}${isDevEnv ? '/static' : ''}/mail`,
+    templatePath: `${process.cwd()}/static/mail`,
     sender: 'no-reply@pwietmaier.de',
   },
 };
