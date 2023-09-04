@@ -86,7 +86,7 @@
       placeholder="Nachricht"
       required
       disabled={isLoading}
-      rows="6"
+      rows="8"
       class="textarea textarea-bordered w-full text-base"
       maxlength={messageMaxLength}
     />

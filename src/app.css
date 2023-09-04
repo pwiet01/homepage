@@ -5,7 +5,7 @@
 @layer base {
   :root {
     color-scheme: only dark;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Ubuntu Mono', sans-serif;
     scroll-behavior: smooth;
 
     --vh: 1vh;

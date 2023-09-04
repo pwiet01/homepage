@@ -4,6 +4,6 @@
   export let message: string;
 </script>
 
-<p><b>Von</b>: {name} ({email})</p>
+<p>Von: {name} ({email})</p>
 <br />
 <p>{@html message}</p>
