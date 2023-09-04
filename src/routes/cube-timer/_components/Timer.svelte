@@ -1,5 +1,5 @@
 <script lang="ts" xmlns:svelte="http://www.w3.org/1999/html">
-  import { formatMs } from './_ts/timerUtils';
+  import { formatMs } from '../_ts/timerUtils';
   import { onDestroy } from 'svelte';
   import CenterFull from '$lib/layout/CenterFull.svelte';
 
@@ -24,8 +24,8 @@
 
   let time = 0;
 
-  let timeoutId: number | undefined = undefined;
-  let intervalId: number | undefined = undefined;
+  let timeoutId: any = undefined;
+  let intervalId: any = undefined;
 
   let state = State.PAUSED;
   $: stateColor = stateColors[state];
@@ -109,7 +109,7 @@
   }
 </script>
 
-<div class="w-full h-full" on:touchstart={onKeyDown} on:touchend={onKeyUp}>
+<div class="w-full h-full absolute" on:touchstart={onKeyDown} on:touchend={onKeyUp}>
   <CenterFull>
     <div class="text-[5rem] sm:text-[6rem] md:text-[7rem] {stateColor}">
       {formatMs(time)}

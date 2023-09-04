@@ -5,19 +5,41 @@
 @layer base {
   :root {
     color-scheme: only dark;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: 'Ubuntu Mono', sans-serif;
     scroll-behavior: smooth;
 
     --vh: 1vh;
     --header-height: 4rem;
     --footer-height: 4rem;
+    --body-padding: 2rem;
+    --body-padding-mobile: 1.5rem;
   }
 
   body {
     display: flex;
     flex-direction: column;
-    padding: 0 1.5rem;
-    height: calc(var(--vh, 1vh) * 100);
+    padding: 0 var(--body-padding-mobile);
+    min-height: calc(var(--vh) * 100);
+
+    @media (min-width: 768px) {
+      padding: 0 var(--body-padding);
+    }
+  }
+
+  body.fixed-height {
+    height: calc(var(--vh) * 100);
+  }
+
+  .body-full-width-section {
+    width: calc(100% + (2 * var(--body-padding-mobile)));
+    margin-left: calc(var(--body-padding-mobile) * -1);
+    padding: 0 var(--body-padding-mobile);
+
+    @media (min-width: 768px) {
+      width: calc(100% + (2 * var(--body-padding)));
+      margin-left: calc(var(--body-padding) * -1);
+      padding: 0 var(--body-padding);
+    }
   }
 
   a {
@@ -58,5 +80,14 @@
 
   a.text-link:hover::before {
     transform: scaleX(1);
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE, Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
 }

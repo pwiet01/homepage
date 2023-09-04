@@ -1,3 +1,7 @@
+<script lang="ts">
+  import { base } from '$app/paths';
+</script>
+
 <div class="w-full flex flex-row justify-center">
   <ol class="relative border-l-[0.25rem] border-green-700 ml-6 px-3">
     <li class="mb-10 ml-6">
@@ -55,7 +59,7 @@
       <span
         class="absolute flex items-center justify-center w-12 h-12 -left-[1.625rem] rounded-full bg-green-700"
       >
-        <img src="./images/basecom_blume_white.svg" alt="" class="w-[30px]" />
+        <img src="{base}/images/basecom_blume_white.svg" alt="" class="w-[30px]" />
       </span>
       <h2 class="h-12 flex items-center text-xl">Software Developer</h2>
       <p class="-mt-[0.65rem] block text-sm leading-none opacity-50">

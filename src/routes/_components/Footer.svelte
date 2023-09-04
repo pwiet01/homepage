@@ -1,5 +1,5 @@
 <script lang="ts">
-  import SvelteLogo from './SvelteLogo.svelte';
+  import SvelteLogo from '$lib/components/SvelteLogo.svelte';
   import { footerHidden } from '$lib/ts/stores';
 </script>
 
@@ -35,7 +35,7 @@
 <style>
   .navbar {
     transition: all 100ms linear;
-    height: var(--footer-height, 4rem);
+    height: var(--footer-height);
   }
 
   .hide {

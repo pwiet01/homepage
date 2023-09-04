@@ -1,8 +1,10 @@
 <script lang="ts">
-  import Projects from './Projects.svelte';
-  import AboutMe from './AboutMe.svelte';
+  import Projects from './_components/Projects.svelte';
+  import AboutMe from './_components/AboutMe.svelte';
   import HandPointerListItem from '$lib/components/HandPointerListItem.svelte';
-  import TechStack from './TechStack.svelte';
+  import TechStack from './_components/TechStack.svelte';
+  import Contact from './_components/Contact.svelte';
+  import { base } from '$app/paths';
 
   const sectionClass = 'flex flex-row justify-center items-center py-6 md:py-12';
   const sectionInnerClass = 'flex-1 max-w-[80rem] items-center';
@@ -10,10 +12,12 @@
 
   const dividerClass = 'flex flex-row justify-center p-0';
   const dividerInnerClass = 'divider flex-1 max-w-[80rem] justify-center';
+
+  export let form;
 </script>
 
 <section
-  class="{sectionClass} px-[1.5rem] pt-24 md:pt-28 pb-6 md:pb-12 -mt-[--header-height] w-screen -ml-[1.5rem] bg-base-200"
+  class="{sectionClass} body-full-width-section pt-24 md:pt-28 pb-6 md:pb-12 -mt-[--header-height] bg-base-200"
 >
   <div class="{sectionInnerClass} flex flex-col-reverse md:flex-row md:justify-between">
     <div class="flex-1">
@@ -38,11 +42,15 @@
           ><a href="#tech-stack" class="text-link text-teal-500 before:bg-teal-500">Technologien</a
           ></HandPointerListItem
         >
+        <HandPointerListItem
+          ><a href="#contact" class="text-link text-teal-500 before:bg-teal-500">Kontaktformular</a
+          ></HandPointerListItem
+        >
       </ul>
     </div>
 
     <div class="mb-6 md:mb-0 md:ml-10 flex flex-col justify-center items-center">
-      <img src="./images/patrice01.jpg" alt="Profilbild" class="max-h-64 rounded-full" />
+      <img src="{base}/images/patrice01.jpg" alt="Profilbild" class="max-h-64 rounded-full" />
     </div>
   </div>
 </section>
@@ -72,5 +80,16 @@
   <div class={sectionInnerClass}>
     <h1 class={sectionHeaderClass}>Technologien</h1>
     <TechStack />
+  </div>
+</section>
+
+<div class={dividerClass}>
+  <div class={dividerInnerClass} />
+</div>
+
+<section id="contact" class={sectionClass}>
+  <div class={sectionInnerClass}>
+    <h1 class={sectionHeaderClass}>Kontakt</h1>
+    <Contact form={form?.contactForm} />
   </div>
 </section>

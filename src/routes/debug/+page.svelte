@@ -1,5 +1,5 @@
 <script lang="ts">
-  import DebugBreakpoint from './DebugBreakpoint.svelte';
+  import DebugBreakpoint from './_components/DebugBreakpoint.svelte';
 </script>
 
 <h1 class="text-xl">Breakpoint</h1>

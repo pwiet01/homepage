@@ -5,5 +5,8 @@ export function load() {
       description: 'Bundesliga Vorhersagen mit Kicktipp Integration',
       keywords: 'tippspiel, kicktipp, bundesliga',
     },
+    body: {
+      fixedHeight: true,
+    },
   };
 }

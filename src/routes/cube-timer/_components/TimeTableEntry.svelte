@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { CubeTimerSolve } from './_ts/types';
-  import { formatMs } from './_ts/timerUtils';
+  import type { CubeTimerSolve } from '../_ts/types';
+  import { formatMs } from '../_ts/timerUtils';
 
   export let index: number;
   export let solve: CubeTimerSolve;
@@ -18,9 +18,3 @@
   <td>{parsedSolve.ao5}</td>
   <td>{parsedSolve.ao12}</td>
 </tr>
-
-<style>
-  td {
-    text-align: center;
-  }
-</style>

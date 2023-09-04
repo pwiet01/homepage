@@ -1,5 +1,5 @@
 <script lang="ts">
-  import LogoFull from './LogoFull.svelte';
+  import LogoFull from '$lib/components/LogoFull.svelte';
   import { headerHidden } from '$lib/ts/stores';
 
   export let debug = false;
@@ -44,7 +44,7 @@
 <style>
   .navbar {
     transition: all 100ms linear;
-    height: var(--header-height, 4rem);
+    height: var(--header-height);
   }
 
   .hide {

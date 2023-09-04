@@ -1,10 +1,9 @@
 <script lang="ts">
   import '../app.css';
   import '@fontsource/ubuntu-mono';
-  import Header from './Header.svelte';
-  import Footer from './Footer.svelte';
+  import Header from './_components/Header.svelte';
+  import Footer from './_components/Footer.svelte';
   import { onMount } from 'svelte';
-  import { overflowHidden } from '$lib/ts/stores';
   import { page } from '$app/stores';
 
   export let data;
@@ -22,11 +21,16 @@
   });
 
   $: if (isMounted) {
-    setOverflowHidden($overflowHidden);
+    setBodyFixedHeight($page.data?.body?.fixedHeight ?? $page.error ?? false);
+    setOverflowHidden($page.data?.body?.overflowHidden ?? false);
   }
 
   function setDocHeight() {
     document.documentElement.style.setProperty('--vh', `${window.innerHeight / 100}px`);
+  }
+
+  function setBodyFixedHeight(bodyFixedHeight: boolean) {
+    document.querySelector('body')?.classList.toggle('fixed-height', bodyFixedHeight);
   }
 
   function setOverflowHidden(overflowHidden: boolean) {
@@ -45,7 +49,11 @@
 <svelte:window on:resize={setDocHeight} on:orientationchange={setDocHeight} />
 
 <svelte:head>
-  <title>{$page.data?.meta?.title ?? defaultTitle}</title>
+  {#if $page.error}
+    <title>{`(${$page.status}) ${$page.error?.message ?? 'Error'}`}</title>
+  {:else}
+    <title>{$page.data?.meta?.title ?? defaultTitle}</title>
+  {/if}
 
   <meta
     name="keywords"

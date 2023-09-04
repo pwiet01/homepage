@@ -1,11 +1,12 @@
 <script lang="ts">
-  import SvelteLogo from './SvelteLogo.svelte';
+  import SvelteLogo from '$lib/components/SvelteLogo.svelte';
+  import { base } from '$app/paths';
 
   const linkClass = 'p-0 opacity-70 hover:-translate-y-1';
-  const outerClass = 'card mx-0 md:m-2 md:w-[12rem] lg:w-[16rem] bg-base-200 m-2 h-[4.25rem]';
+  const outerClass = 'card mx-0 md:m-2 md:w-[13rem] lg:w-[16rem] bg-base-200 m-2 h-[4.25rem]';
   const innerClass = 'py-5 flex flex-row items-center';
 
-  const iconClass = 'fa-2xl w-2/5 pl-5';
+  const iconClass = 'fa-2xl w-24 md:w-20 pl-5';
 </script>
 
 <div class="flex flex-col md:flex-row justify-between md:mx-20">
@@ -22,8 +23,8 @@
     <a href="https://spryker.com/" target="_blank" class={linkClass}>
       <div class={outerClass}>
         <div class={innerClass}>
-          <div class="w-2/5 flex flex-row">
-            <img src="./images/spryker.svg" alt="" class="block h-[2.1rem] ml-6" />
+          <div class="w-24 md:w-20 flex flex-row">
+            <img src="{base}/images/spryker.svg" alt="" class="block h-[2.1rem] ml-6" />
           </div>
           <h2 class="card-title text-xl">Spryker</h2>
         </div>
@@ -53,7 +54,7 @@
     <a href="https://svelte.dev/" target="_blank" class={linkClass}>
       <div class={outerClass}>
         <div class={innerClass}>
-          <div class="w-2/5 flex flex-row">
+          <div class="w-24 md:w-20 flex flex-row">
             <SvelteLogo class="block h-[1.9rem] ml-5" />
           </div>
           <h2 class="card-title text-xl">Svelte</h2>
@@ -64,8 +65,8 @@
     <a href="https://www.typescriptlang.org/" target="_blank" class="{linkClass} hidden md:block">
       <div class={outerClass}>
         <div class={innerClass}>
-          <div class="w-2/5 flex flex-row">
-            <img src="./images/typescript.svg" alt="" class="block h-[1.75rem] ml-5" />
+          <div class="w-24 md:w-20 flex flex-row">
+            <img src="{base}/images/typescript.svg" alt="" class="block h-[1.75rem] ml-5" />
           </div>
           <h2 class="card-title text-xl">TypeScript</h2>
         </div>

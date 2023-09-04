@@ -1,7 +1,7 @@
-import { NODE_ENV } from '$env/static/private';
+import { serverConfig } from '$lib/server/config/serverConfig';
 
 export function load() {
   return {
-    debug: NODE_ENV === 'development',
+    debug: serverConfig.isDevEnv,
   };
 }
