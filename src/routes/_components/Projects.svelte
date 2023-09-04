@@ -28,7 +28,6 @@
       href: '/cube-timer',
       name: 'CubeTimer',
       description1: 'Speedcube Timer',
-      description2: 'mit Synchronisation',
     },
   ];
 </script>

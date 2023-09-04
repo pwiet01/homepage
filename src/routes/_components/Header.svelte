@@ -29,7 +29,7 @@
         <li><a href="/cube-timer" class="text-xl">CubeTimer</a></li>
       </ul>
     </div>
-    <a href="/static" class="flex-1 btn btn-ghost opacity-100">
+    <a href="/" class="flex-1 btn btn-ghost opacity-100">
       <LogoFull class="w-auto h-6" />
     </a>
   </div>

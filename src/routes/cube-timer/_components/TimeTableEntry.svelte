@@ -18,9 +18,3 @@
   <td>{parsedSolve.ao5}</td>
   <td>{parsedSolve.ao12}</td>
 </tr>
-
-<style>
-  td {
-    text-align: center;
-  }
-</style>

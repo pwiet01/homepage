@@ -3,7 +3,7 @@ import { fail } from '@sveltejs/kit';
 import type { ContactFormData } from './_ts/types';
 import { parseFormDataString } from '$lib/ts/formUtils';
 import { sendMail } from '$lib/server/mail/mailer';
-import Contact from "$lib/server/mail/templates/Contact.svelte";
+import Contact from '$lib/server/mail/templates/Contact.svelte';
 
 export const actions: Actions = {
   contact({ request }) {

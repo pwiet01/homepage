@@ -3,7 +3,7 @@ import { MAILER_HOST, MAILER_USER, MAILER_PASSWORD } from '$env/static/private';
 import { globalConfig } from '$lib/config/globalConfig';
 import { serverConfig } from '$lib/server/config/serverConfig';
 import type { ComponentProps, ComponentType, SvelteComponent } from 'svelte';
-import Base from "$lib/server/mail/templates/Base.svelte";
+import Base from '$lib/server/mail/templates/Base.svelte';
 
 export interface CustomMail<Component extends SvelteComponent> {
   to?: string;

@@ -109,7 +109,7 @@
   }
 </script>
 
-<div class="w-full h-full" on:touchstart={onKeyDown} on:touchend={onKeyUp}>
+<div class="w-full h-full absolute" on:touchstart={onKeyDown} on:touchend={onKeyUp}>
   <CenterFull>
     <div class="text-[5rem] sm:text-[6rem] md:text-[7rem] {stateColor}">
       {formatMs(time)}
