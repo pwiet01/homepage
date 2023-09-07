@@ -18,6 +18,10 @@ export function saveCubeTimerStorage(storage: CubeTimerStorage) {
   localStorage.setItem(getStorageKey(), JSON.stringify(storage));
 }
 
+export function deleteCubeTimerStorage() {
+  localStorage.removeItem(getStorageKey());
+}
+
 function checkCubeTimerStorage(parsedStorage: unknown): CubeTimerStorage {
   if (!isObject(parsedStorage)) {
     return getEmptyCubeTimerStorage();

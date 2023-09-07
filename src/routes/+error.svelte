@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
+  import Modal from '$lib/components/Modal.svelte';
 
   let internalErrorModal: HTMLDialogElement;
 
@@ -16,15 +17,8 @@
   <h3 class="max-w-2xl">{$page.error?.message ?? 'Error'}</h3>
 </div>
 
-<dialog class="modal backdrop-blur" bind:this={internalErrorModal}>
-  <form method="dialog" class="modal-box">
-    <h1 class="text-2xl">Oh mist...</h1>
-    <p class="py-4">Da ist leider was schiefgelaufen. Bitte versuche es später erneut.</p>
-    <div class="modal-action">
-      <button class="btn">Schließen</button>
-    </div>
-  </form>
-  <form method="dialog" class="modal-backdrop">
-    <button class="cursor-default" />
-  </form>
-</dialog>
+<Modal
+  title="Oh mist..."
+  text="Da ist leider was schiefgelaufen. Bitte versuche es später erneut."
+  bind:modalRef={internalErrorModal}
+/>
