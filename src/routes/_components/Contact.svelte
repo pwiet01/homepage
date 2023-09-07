@@ -3,6 +3,7 @@
   import type { ContactFormResponse } from '../_ts/types';
   import { onMount } from 'svelte';
   import type { ActionResult } from '@sveltejs/kit';
+  import Modal from '$lib/components/Modal.svelte';
 
   export let form: ContactFormResponse | undefined;
 
@@ -99,17 +100,8 @@
   </form>
 </div>
 
-<dialog class="modal backdrop-blur" bind:this={successModal}>
-  <form method="dialog" class="modal-box">
-    <h1 class="text-2xl">Nachricht gesendet!</h1>
-    <p class="py-4">
-      Ich habe die Nachricht erhalten und melde mich so schnell wie möglich zurück!
-    </p>
-    <div class="modal-action">
-      <button class="btn">Schließen</button>
-    </div>
-  </form>
-  <form method="dialog" class="modal-backdrop">
-    <button class="cursor-default" />
-  </form>
-</dialog>
+<Modal
+  title="Nachricht gesendet!"
+  text="Ich habe die Nachricht erhalten und melde mich so schnell wie möglich zurück!"
+  bind:modalRef={successModal}
+/>
