@@ -97,7 +97,7 @@
   text="Alle Zeiten werden unwiderruflich gelöscht!"
   bind:modalRef={deleteConfirmModal}
 >
-  <div class="modal-action">
+  <div class="modal-action" slot="actions">
     <button class="btn btn-error" on:click={onDeleteConfirm}> Löschen </button>
   </div>
 </Modal>

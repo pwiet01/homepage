@@ -1,7 +1,8 @@
 import { serverConfig } from '$lib/server/config/serverConfig';
+import type { LayoutServerLoad } from './$types';
 
-export function load() {
+export const load: LayoutServerLoad = () => {
   return {
     debug: serverConfig.isDevEnv,
   };
-}
+};

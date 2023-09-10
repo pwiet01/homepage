@@ -19,15 +19,16 @@
 
   const websiteProjects: Project[] = [
     {
-      href: '/kicktipp',
+      href: '/tippspiel',
       name: 'Tippspiel',
       description1: 'Bundesliga Vorhersagen',
-      description2: 'mit Kicktipp Integration',
+      description2: 'basierend auf Wettquoten',
     },
     {
       href: '/cube-timer',
       name: 'CubeTimer',
-      description1: 'Speedcube Timer',
+      description1: 'Rubiks Cube Timer',
+      description2: 'mit Scramble Generator',
     },
   ];
 </script>

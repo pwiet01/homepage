@@ -31,7 +31,7 @@
       </div>
     </a>
 
-    <a href="https://www.php.net/" target="_blank" class="{linkClass} hidden md:block">
+    <a href="https://www.php.net/" target="_blank" class={linkClass}>
       <div class={outerClass}>
         <div class={innerClass}>
           <i class="fa-brands fa-php text-blue-500 {iconClass}" />
@@ -62,7 +62,7 @@
       </div>
     </a>
 
-    <a href="https://www.typescriptlang.org/" target="_blank" class="{linkClass} hidden md:block">
+    <a href="https://www.typescriptlang.org/" target="_blank" class={linkClass}>
       <div class={outerClass}>
         <div class={innerClass}>
           <div class="w-24 md:w-20 flex flex-row">

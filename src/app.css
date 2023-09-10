@@ -50,10 +50,18 @@
     outline: none;
   }
 
+  .icon-button {
+    opacity: 50%;
+    transition: all 200ms ease-out;
+    outline: none;
+  }
+
   a:hover,
   a:focus,
   .text-link:hover,
-  .text-link:focus {
+  .text-link:focus,
+  .icon-button:hover,
+  .icon-button:focus {
     opacity: 100%;
   }
 
