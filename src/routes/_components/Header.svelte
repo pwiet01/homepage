@@ -25,7 +25,7 @@
       <ul
         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52 border-2 border-base-100"
       >
-        <li><a href="/kicktipp" class="text-xl">Tippspiel</a></li>
+        <li><a href="/tippspiel" class="text-xl">Tippspiel</a></li>
         <li><a href="/cube-timer" class="text-xl">CubeTimer</a></li>
       </ul>
     </div>

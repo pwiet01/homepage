@@ -68,6 +68,7 @@
       placeholder="Deine E-Mail-Adresse"
       class="input input-bordered w-full text-base mb-2"
       maxlength="50"
+      autocomplete="email"
     />
 
     <input
@@ -79,6 +80,7 @@
       placeholder="Name"
       class="input input-bordered w-full text-base mb-5"
       maxlength="50"
+      autocomplete="name"
     />
 
     <textarea

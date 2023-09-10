@@ -20,6 +20,10 @@
     isMounted = true;
   });
 
+  $: pageTitle = $page.error
+    ? `(${$page.status}) ${$page.error?.message ?? 'Error'}`
+    : $page.data?.meta?.title ?? defaultTitle;
+
   $: if (isMounted) {
     setBodyFixedHeight($page.data?.body?.fixedHeight ?? $page.error ?? false);
     setOverflowHidden($page.data?.body?.overflowHidden ?? false);
@@ -49,11 +53,7 @@
 <svelte:window on:resize={setDocHeight} on:orientationchange={setDocHeight} />
 
 <svelte:head>
-  {#if $page.error}
-    <title>{`(${$page.status}) ${$page.error?.message ?? 'Error'}`}</title>
-  {:else}
-    <title>{$page.data?.meta?.title ?? defaultTitle}</title>
-  {/if}
+  <title>{pageTitle}</title>
 
   <meta
     name="keywords"

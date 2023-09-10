@@ -1,4 +1,6 @@
-export function load() {
+import type { PageLoad } from './$types';
+
+export const load: PageLoad = () => {
   return {
     meta: {
       title: 'CubeTimer',
@@ -10,4 +12,4 @@ export function load() {
       overflowHidden: true,
     },
   };
-}
+};

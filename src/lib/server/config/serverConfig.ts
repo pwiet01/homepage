@@ -5,6 +5,9 @@ export const serverConfig = {
   mail: {
     sender: 'no-reply@pwietmaier.de',
   },
+  tippspiel: {
+    oddsRedisKey: 'bl-odds',
+  },
 };
 
 function isDevEnv() {
