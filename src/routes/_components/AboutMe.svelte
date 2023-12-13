@@ -2,7 +2,23 @@
   import { base } from '$app/paths';
 </script>
 
-<div class="w-full flex flex-row justify-center">
+<section class="md:px-10 text-justify">
+  Beruflich bin ich überwiegend im Backend, aufbauend auf
+  <a href="https://symfony.com/" target="_blank" class="text-link">Symfony</a>
+  und
+  <a href="https://spryker.com/" target="_blank" class="text-link">Spryker</a>, unterwegs. Abseits
+  davon probiere ich mich gern an verschiedenen Backend- und Frontendtechnologien. Das Fullstack
+  Framework
+  <a href="https://kit.svelte.dev/" target="_blank" class="text-link">SvelteKit</a>
+  ist aktuell häufig das Werkzeug meiner Wahl.
+  <br />
+
+  Wie Du vielleicht festgestellt hast, gibt es hier einige Referenzen zum Rubik's Cube
+  (Zauberwürfel). Speedcubing, also das Lösen eines Zauberwürfels auf Zeit, ist ein Hobby von mir,
+  das ich gerne in meine Projekte integriere.
+</section>
+
+<div class="w-full flex flex-row justify-center mt-16">
   <ol class="relative border-l-[0.25rem] border-green-700 ml-6 px-3">
     <li class="mb-10 ml-6">
       <span
@@ -76,7 +92,7 @@
         <ul class="list-disc">
           <li class="mb-2">Entwicklung von Softwareprojekten im Bereich E-Commerce</li>
           <li class="mb-2">Schwerpunkt: Spryker, Symfony</li>
-          <li>Arbeit in agilen Scrum Teams</li>
+          <li>Arbeit in agilen Scrum Projekten</li>
         </ul>
       </div>
     </li>

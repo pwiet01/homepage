@@ -14,7 +14,7 @@
   </a>
 
   <div class="flex-1 sm:flex-none flex flex-row items-center justify-end">
-    <a href="/imprint"> Impressum </a>
+    <a href="/legal-notice"> Impressum </a>
 
     <div class="divider divider-horizontal" />
 
