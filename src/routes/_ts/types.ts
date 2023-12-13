@@ -3,6 +3,10 @@ export interface Project {
   name: string;
   description1: string;
   description2?: string;
+  link?: string;
+  linkText?: string;
+  modifier?: string;
+  hint?: string;
 }
 
 export interface ContactFormResponse {

@@ -20,7 +20,7 @@
         <div>
           <h2 class="mb-2 opacity-50 text-2xl">Kontakt</h2>
           <p>{globalConfig.mail.contact}</p>
-          <p>Mobil: +49 157 36771959</p>
+          <p>Mobil: Auf Anfrage</p>
         </div>
       </div>
     </div>

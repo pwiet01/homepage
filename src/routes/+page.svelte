@@ -14,19 +14,27 @@
   const dividerInnerClass = 'divider flex-1 max-w-[80rem] justify-center';
 
   export let form;
+  const age = calculateAge();
+
+  function calculateAge() {
+    const birthday = new Date(2001, 3, 18);
+    const ageDifMs = Date.now() - birthday.getTime();
+    const ageDate = new Date(ageDifMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+  }
 </script>
 
 <section
   class="{sectionClass} body-full-width-section pt-24 md:pt-28 pb-6 md:pb-12 -mt-[--header-height] bg-base-200"
 >
   <div class="{sectionInnerClass} flex flex-col-reverse md:flex-row md:justify-between">
-    <div class="flex-1">
+    <div class="flex-1 text-justify">
       <h1 class="text-primary mb-2 text-4xl">Hey!</h1>
       <p class="text-lg">
-        Ich bin Patrice, Full Stack Web Developer aus Osnabrück und seit Januar 2023 bei
+        Ich bin Patrice ({age}), Fullstack Web Developer aus Osnabrück und seit Januar 2023 bei
         <a href="https://www.basecom.de/" target="_blank" class="text-link">basecom</a> beschäftigt.
-      </p>
-      <p class="text-lg mt-1">
+        <br />
+
         Auf dieser Website möchte ich mich und einige meiner Projekte vorstellen.
       </p>
       <ul class="fa-ul ml-0 mt-5 text-lg">
