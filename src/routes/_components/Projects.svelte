@@ -15,7 +15,7 @@
       name: 'SpeedCubeShare',
       description1: "Teile deine Rubik's Cube Stats und",
       description2: 'tausche dich mit anderen aus',
-      link: 'https://speedcubeshare.com',
+      link: 'https://speedcubeshare.vercel.app',
       linkText: 'Zur Website',
       modifier: 'big',
       hint: '(In Arbeit)',
