@@ -5,42 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="CubeTimer delete storage button">
-      <change afterPath="$PROJECT_DIR$/src/lib/server/kvClient.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ts/tippspiel/openLigaApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ts/tippspiel/predictions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ts/tippspiel/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/+server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/customOdds.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/oddsApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/soccer-predictions/+server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/tippspiel/+page.server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/tippspiel/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Modal.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Modal.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/server/config/serverConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/_components/Contact.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/Contact.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/_components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/Header.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/_components/AboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/AboutMe.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/_components/Projects.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/Projects.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/_components/TechStack.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/TechStack.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/cube-timer/_components/TimeTable.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/cube-timer/_components/TimeTable.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/debug/+page.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/debug/+page.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/debug/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/debug/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/+server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/customOdds.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/customOdds.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/debug/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/debug/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/imprint/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/imprint/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/kicktipp/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/kicktipp/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/tippspiel/+page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,18 +60,23 @@
     &quot;assignee&quot;: &quot;pwiet01&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="58e16240-5c2d-430c-8a61-e65b20eb536a" />
-        <option name="url" value="git@github.com:pwiet01/homepage.git" />
-      </UrlAndAccount>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:pwiet01/homepage.git",
+    "accountId": "58e16240-5c2d-430c-8a61-e65b20eb536a"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -110,27 +87,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/kicktipp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pwiet/Documents/Projects/homepage/static/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/pwiet/Documents/Projects/homepage",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettier.import.notification.dismissed": "true",
+    "settings.editor.selected.configurable": "settings.sync",
+    "ts.external.directory.path": "/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images" />
@@ -177,6 +156,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PS-243.23654.168" />
+        <option value="bundled-php-predefined-a98d8de5180a-4c3855d0ab16-com.jetbrains.php.sharedIndexes-PS-243.23654.168" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -202,6 +189,9 @@
       <workItem from="1693676283842" duration="23226000" />
       <workItem from="1693761251586" duration="31035000" />
       <workItem from="1694277174967" duration="33121000" />
+      <workItem from="1712594742259" duration="9000" />
+      <workItem from="1737758095476" duration="131000" />
+      <workItem from="1737758231687" duration="2307000" />
     </task>
     <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
       <option name="closed" value="true" />

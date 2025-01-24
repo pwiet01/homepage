@@ -7,15 +7,7 @@
   <a href="https://symfony.com/" target="_blank" class="text-link">Symfony</a>
   und
   <a href="https://spryker.com/" target="_blank" class="text-link">Spryker</a>, unterwegs. Abseits
-  davon probiere ich mich gern an verschiedenen Backend- und Frontendtechnologien. Das Fullstack
-  Framework
-  <a href="https://kit.svelte.dev/" target="_blank" class="text-link">SvelteKit</a>
-  ist aktuell häufig das Werkzeug meiner Wahl.
-  <br />
-
-  Wie Du vielleicht festgestellt hast, gibt es hier einige Referenzen zum Rubik's Cube
-  (Zauberwürfel). Speedcubing, also das Lösen eines Zauberwürfels auf Zeit, ist ein Hobby von mir,
-  das ich gerne in meine Projekte integriere.
+  davon probiere ich mich gern an verschiedenen Backend- und Frontendtechnologien.
 </section>
 
 <div class="w-full flex flex-row justify-center mt-16">
@@ -91,7 +83,7 @@
       <div class="mb-4 opacity-90 text-sm max-w-lg">
         <ul class="list-disc">
           <li class="mb-2">Entwicklung von Softwareprojekten im Bereich E-Commerce</li>
-          <li class="mb-2">Schwerpunkt: Spryker, Symfony</li>
+          <li class="mb-2">Schwerpunkt: Symfony, Spryker, Shopify</li>
           <li>Arbeit in agilen Scrum Projekten</li>
         </ul>
       </div>

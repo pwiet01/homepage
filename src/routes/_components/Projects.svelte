@@ -11,16 +11,6 @@
       description2: 'heruntergeladen hast',
     },
     {
-      href: 'https://github.com/pwiet01/speedcubeshare',
-      name: 'SpeedCubeShare',
-      description1: "Teile deine Rubik's Cube Stats und",
-      description2: 'tausche dich mit anderen aus',
-      link: 'https://speedcubeshare.vercel.app',
-      linkText: 'Zur Website',
-      modifier: 'big',
-      hint: '(In Arbeit)',
-    },
-    {
       href: 'https://github.com/pwiet01/in-time',
       name: 'InTime',
       description1: 'App zum automatischen Tracken von',

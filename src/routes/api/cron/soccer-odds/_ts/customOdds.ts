@@ -3,7 +3,7 @@ import type { OddsApiMatch } from './types';
 import { getCurrentMatchDay } from '$lib/ts/tippspiel/openLigaApi';
 
 export const openLigaOddsTeamMapping: { [id: string]: string } = {
-  199: 'FC Heidenheim',
+  199: '1. FC Heidenheim',
   65: 'FC Koln',
   80: 'Union Berlin',
   81: 'FSV Mainz 05',
@@ -21,6 +21,8 @@ export const openLigaOddsTeamMapping: { [id: string]: string } = {
   129: 'VfL Bochum',
   131: 'VfL Wolfsburg',
   134: 'Werder Bremen',
+  104: 'Holstein Kiel',
+  98: 'FC St. Pauli',
 };
 
 export async function getCustomOdds(
