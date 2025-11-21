@@ -6,6 +6,6 @@ export const load: PageLoad = ({ fetch }) => {
     meta: {
       title: 'Debug',
     },
-    openLigaTeams: getAvailableTeams(fetch, '2024'),
+    openLigaTeams: getAvailableTeams(fetch, '2025'),
   };
 };

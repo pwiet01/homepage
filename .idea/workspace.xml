@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73b06f45-90b1-4811-9943-dbc9af14d9b6" name="Changes" comment="CubeTimer delete storage button">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/_components/AboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/AboutMe.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/_components/Projects.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_components/Projects.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/+server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/+server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/customOdds.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/customOdds.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/oddsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api/cron/soccer-odds/_ts/oddsApi.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/debug/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/debug/+page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,12 +63,12 @@
       </list>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:pwiet01/homepage.git",
-    "accountId": "58e16240-5c2d-430c-8a61-e65b20eb536a"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:pwiet01/homepage.git&quot;,
+    &quot;accountId&quot;: &quot;58e16240-5c2d-430c-8a61-e65b20eb536a&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -94,19 +90,21 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/pwiet/Documents/Projects/homepage",
+    "last_opened_file_path": "/Users/patrice/Documents/Projects/homepage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettier.import.notification.dismissed": "true",
+    "prettierjs.PrettierConfiguration.Package": "/Users/patrice/Documents/Projects/homepage/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.sync",
-    "ts.external.directory.path": "/Users/pwiet/Documents/Projects/homepage/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/patrice/Documents/Projects/homepage/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -159,8 +157,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PS-243.23654.168" />
-        <option value="bundled-php-predefined-a98d8de5180a-4c3855d0ab16-com.jetbrains.php.sharedIndexes-PS-243.23654.168" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -192,6 +189,7 @@
       <workItem from="1712594742259" duration="9000" />
       <workItem from="1737758095476" duration="131000" />
       <workItem from="1737758231687" duration="2307000" />
+      <workItem from="1763750159257" duration="2781000" />
     </task>
     <task id="LOCAL-00001" summary="Cube Timer Page add Timer">
       <option name="closed" value="true" />
@@ -326,6 +324,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />

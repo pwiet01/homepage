@@ -4,7 +4,7 @@ import { getCurrentMatchDay } from '$lib/ts/tippspiel/openLigaApi';
 
 export const openLigaOddsTeamMapping: { [id: string]: string } = {
   199: '1. FC Heidenheim',
-  65: 'FC Koln',
+  65: '1. FC Köln',
   80: 'Union Berlin',
   81: 'FSV Mainz 05',
   6: 'Bayer Leverkusen',
@@ -23,6 +23,7 @@ export const openLigaOddsTeamMapping: { [id: string]: string } = {
   134: 'Werder Bremen',
   104: 'Holstein Kiel',
   98: 'FC St. Pauli',
+  100: 'Hamburger SV',
 };
 
 export async function getCustomOdds(
